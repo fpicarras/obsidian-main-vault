@@ -11,8 +11,12 @@
             "id": "8923fe5d214fcfdd",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Homepage.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Homepage.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Homepage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -119,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DailyNotes/{{date}}.md"
+                "file": "Homepage.md"
               }
             }
           },
@@ -149,8 +155,11 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "e0f0b81a26599585",
+  "active": "8923fe5d214fcfdd",
   "lastOpenFiles": [
+    "DailyNotes/2024/06-June/2024-06-17-Monday.md",
+    "DailyNotes/2024/06-June",
+    "DailyNotes/2024",
     "DailyNotes/{{date}}.md",
     "DailyNotes/2024-06-10.md",
     "DailyNotes",
