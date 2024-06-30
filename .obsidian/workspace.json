@@ -13,24 +13,10 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "create a link.md",
+                "file": "Teste.md",
                 "mode": "source",
                 "source": false
               }
-            }
-          }
-        ]
-      },
-      {
-        "id": "871e33911b9bc8d8",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "ce57cc41bc401315",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {}
             }
           }
         ]
@@ -99,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "create a link.md",
+                "file": "Teste.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "create a link.md",
+                "file": "Teste.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "create a link.md"
+                "file": "Teste.md"
               }
             }
           }
@@ -160,9 +146,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e0f0b81a26599585",
+  "active": "e64a474ce8969cf1",
   "lastOpenFiles": [
-    "create a link.md",
-    "Welcome.md"
+    "Welcome.md",
+    "Teste.md",
+    "create a link.md"
   ]
 }
