@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "88711af0eb3aca8a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homepage.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#To-Do",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +78,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -85,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DailyNotes/2024/06-June/2024-06-30-Sunday.md",
+                "file": "Homepage.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DailyNotes/2024/06-June/2024-06-30-Sunday.md",
+                "file": "Homepage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +139,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DailyNotes/2024/06-June/2024-06-30-Sunday.md"
+                "file": "Homepage.md"
               }
             }
           },
@@ -155,10 +169,10 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "a76266ac43334057",
+  "active": "a4a4caae4678ba56",
   "lastOpenFiles": [
-    "DailyNotes/Daily Notes Template.md",
     "DailyNotes/2024/06-June/2024-06-30-Sunday.md",
+    "DailyNotes/Daily Notes Template.md",
     "Homepage.md",
     "DailyNotes/2024/06-June",
     "DailyNotes/2024",
