@@ -8,4 +8,5 @@ action Daily notes: Open today's daily note
 ## 
 ## All
 ```tasks
+short mode
 ```
