@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "A madalena é gira.md",
+                "file": "Teste.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "A madalena é gira.md",
+                "file": "Teste.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "A madalena é gira.md"
+                "file": "Teste.md"
               }
             }
           }
@@ -159,10 +158,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dce9ece1831d0d92",
+  "active": "e64a474ce8969cf1",
   "lastOpenFiles": [
-    "Teste.md",
     "A madalena é gira.md",
+    "Teste.md",
     "Welcome.md",
     "create a link.md"
   ]
