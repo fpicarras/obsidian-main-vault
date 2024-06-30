@@ -3,3 +3,4 @@ name Daily Note
 type command
 action Daily notes: Open today's daily note
 ```
+
