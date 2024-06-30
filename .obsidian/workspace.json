@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "76c37cc2796e0e1c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Homepage.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DailyNotes/2024/06-June/2024-06-30-Sunday.md",
+                "file": "Homepage.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DailyNotes/2024/06-June/2024-06-30-Sunday.md",
+                "file": "Homepage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DailyNotes/2024/06-June/2024-06-30-Sunday.md"
+                "file": "Homepage.md"
               }
             }
           },
@@ -155,10 +168,10 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "8923fe5d214fcfdd",
+  "active": "76c37cc2796e0e1c",
   "lastOpenFiles": [
-    "Homepage.md",
     "DailyNotes/2024/06-June/2024-06-30-Sunday.md",
+    "Homepage.md",
     "DailyNotes/2024/06-June",
     "DailyNotes/2024",
     "DailyNotes/2024/06-June/2024-06-17-Monday.md",
