@@ -1,4 +1,6 @@
 {
   "cssTheme": "Obsidian Nord",
-  "monospaceFontFamily": "DejaVuSansM Nerd Font Mono"
+  "monospaceFontFamily": "DejaVuSansM Nerd Font Mono",
+  "textFontFamily": "DejaVuSansM Nerd Font Mono",
+  "interfaceFontFamily": "DejaVuSansM Nerd Font Mono"
 }
