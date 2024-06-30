@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4ab164b1a254ccf1",
+        "id": "c2b197f138539b12",
         "type": "tabs",
         "children": [
           {
-            "id": "1e7055e4c9dc0d73",
+            "id": "a76266ac43334057",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -155,7 +155,7 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "1e7055e4c9dc0d73",
+  "active": "a76266ac43334057",
   "lastOpenFiles": [
     "DailyNotes/2024/06-June/2024-06-30-Sunday.md",
     "Homepage.md",
