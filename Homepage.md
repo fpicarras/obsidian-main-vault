@@ -10,4 +10,3 @@ action Daily notes: Open today's daily note
 short mode
 not done
 ```
-

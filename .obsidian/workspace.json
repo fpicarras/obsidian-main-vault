@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homepage.md",
+                "file": "DailyNotes/2024/07-July/2024-07-03-Wednesday.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Homepage.md",
+                "file": "DailyNotes/2024/07-July/2024-07-03-Wednesday.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Homepage.md",
+                "file": "DailyNotes/2024/07-July/2024-07-03-Wednesday.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Homepage.md"
+                "file": "DailyNotes/2024/07-July/2024-07-03-Wednesday.md"
               }
             }
           },
@@ -158,6 +158,7 @@
   "active": "ae8e692417a1c1c8",
   "lastOpenFiles": [
     "DailyNotes/2024/07-July/2024-07-01-Monday.md",
+    "DailyNotes/2024/07-July/2024-07-03-Wednesday.md",
     "Homepage.md",
     "DailyNotes/2024/07-July",
     "DailyNotes/2024/06-June/2024-06-30-Sunday.md",
