@@ -18,17 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "8ff6b6e5e2208e33",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -95,6 +86,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "GoldenRift/Trading System.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -106,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "GoldenRift/Trading System.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -132,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "GoldenRift/Trading System.md"
+              }
             }
           }
         ],
@@ -168,7 +163,7 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "8ff6b6e5e2208e33",
+  "active": "c858c7eacf424afc",
   "lastOpenFiles": [
     "GoldenRift/Trading System.md",
     "GoldenRift/create a link.md",
