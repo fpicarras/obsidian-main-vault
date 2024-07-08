@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "_either [Component] or [List of WeightedComponent]_",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -163,7 +164,7 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "c858c7eacf424afc",
+  "active": "a4a4caae4678ba56",
   "lastOpenFiles": [
     "GoldenRift/Trading System.md",
     "GoldenRift/create a link.md",
