@@ -78,6 +78,7 @@
       {
         "id": "8e519e8edaaf51ab",
         "type": "tabs",
+        "dimension": 64.90384615384616,
         "children": [
           {
             "id": "cfee6c453c4778f2",
@@ -128,7 +129,15 @@
                 "file": "GoldenRift/Trading System.md"
               }
             }
-          },
+          }
+        ],
+        "currentTab": 3
+      },
+      {
+        "id": "eb9ebd0299986084",
+        "type": "tabs",
+        "dimension": 35.09615384615385,
+        "children": [
           {
             "id": "026f009c3c1e0c94",
             "type": "leaf",
@@ -154,7 +163,7 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "cfee6c453c4778f2",
+  "active": "eb2448cf2488f212",
   "lastOpenFiles": [
     "GoldenRift/create a link.md",
     "GoldenRift/Trading System.md",
