@@ -27,4 +27,4 @@ Relevant fields:
 - `expiresInSeconds` - _Integer_ or [Stepped Int](https://github.com/mortuusars/Wares/wiki/Sealed-Delivery-Agreement#stepped-int) - Finalized to a number.
 # Pricing
 
-Prices need to be based of the Vanilla prices of the 
+Prices need to be based of the Vanilla item prices of the game. Aimed for the prices sold with discount - for example, 1 Pumpkin for 1 emerald.
