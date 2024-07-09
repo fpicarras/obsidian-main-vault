@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "GoldenRift/Trading System.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "_either [Component] or [List of WeightedComponent]_",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -164,7 +164,7 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "a4a4caae4678ba56",
+  "active": "c858c7eacf424afc",
   "lastOpenFiles": [
     "GoldenRift/Trading System.md",
     "GoldenRift/create a link.md",
