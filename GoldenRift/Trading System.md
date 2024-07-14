@@ -25,6 +25,13 @@ Relevant fields:
 - `experience` - _Integer_ or [Stepped Int](https://github.com/mortuusars/Wares/wiki/Sealed-Delivery-Agreement#stepped-int) - Finalized to a number.
 - `deliveryTime` - _Integer_ or [Stepped Int](https://github.com/mortuusars/Wares/wiki/Sealed-Delivery-Agreement#stepped-int) - Finalized to a number.
 - `expiresInSeconds` - _Integer_ or [Stepped Int](https://github.com/mortuusars/Wares/wiki/Sealed-Delivery-Agreement#stepped-int) - Finalized to a number.
+***
 # Pricing
 
 Prices need to be based of the Vanilla item prices of the game. Aimed for the prices sold with discount - for example, 1 Pumpkin for 1 emerald.
+***
+# Villagers
+
+> Villagers are unique, because they allow some worldbuilding to occur, one could create stalls or custom villages that focus on some specific products; like a magic town or a wandering gypsy monster hunter!
+
+## Datapack

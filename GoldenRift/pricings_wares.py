@@ -101,15 +101,15 @@ class TradingPages:
         for group_name in group_names:
             md = MarkdownPage(name=folderName + "/" + group_name)
             group_data = data[data["Type"] == group_name]
+            md.addLine("***")
             for index, row in group_data.iterrows():
                 command = self.wares.generate(row['ID'], row['Qty'], 'emerald', row['Sell Price (Unit)'])
                 md.addTrade(row['Name'], row['Qty'], 'Emerald', row['Sell Price (Unit)'], command)
-            md.addLine("***")
             md.write()
 
 wc = WaresCreator(experience=10)
-test = TradingPages("GoldenRift-Pricing.xlsx", "test", )
-test.createMultiPage()
+test = TradingPages("GoldenRift-Pricing.xlsx", "Wares Trades", wc)
+test.createSinglePage()
 
 
         
