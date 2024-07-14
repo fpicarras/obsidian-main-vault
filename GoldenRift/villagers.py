@@ -5,6 +5,8 @@ class Villager:
             self.nbtData["ArmorItems"] = [{}, {}, {}, dict(id=helmet, Count=1)]
         if name:
             self.nbtData["CustomName"] = '"\\"'+name+'\\""'
+        if hands:
+            self.nbtData["HandItems"] = [dict(id = hands, Count = 1), {}]
 
     def addTrade(self, buyId: str, b_count: int, sellId: str, s_count: int, maxUses = 9999999):
         aux = dict(buy = dict(id = buyId, Count = b_count), sell = dict(id = sellId, Count = s_count), maxUses = maxUses)
@@ -28,7 +30,7 @@ class Villager:
         aux = self.format_dict(self.nbtData)
         return "/summon villager ~ ~1 ~ " + aux.replace("'","")
 
-v = Villager("test", "swamp", "librarian", "5", helmet="blue_stained_glass")
+v = Villager("test", "swamp", "librarian", "5", helmet="blue_stained_glass", hands="book")
 v.addTrade("emerald", 1, "stone", 16)
 print(v.getCommand())
 
