@@ -52,7 +52,7 @@ class MarkdownPage:
     def addTrade(self, requested_name: str, qty: int, payment_name: str, price: float, command: str):
         t_str = ["## " + requested_name]
         t_str.append(str(qty) + " **" + requested_name + "** for " + str(round(price*qty)) + " **" + payment_name+"**.")
-        t_str.append("```" + command + "```")
+        t_str.append("```\n" + command + "\n```")
         self.page += t_str
 
     def addLine(self, text: str):
