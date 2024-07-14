@@ -1,10 +1,14 @@
 class Villager:
-    def __init__(self, name: str, type: str, profession: str, level: int) -> None:
+    def __init__(self, name: str, type: str, profession: str, level: int, helmet=None, hands=None) -> None:
         self.name = name
         self.type = type
         self.prof = profession
         self.level = level
         self.trades = []
+        if helmet:
+            self.armor = [{}, {}, {}, dict(id=helmet, Count=1)]
+        else:
+            
 
     def addTrade(self, buyId: str, b_count: int, sellId: str, s_count: int, maxUses = 9999999):
         aux = dict(buy = dict(id = buyId, Count = b_count), sell = dict(id = sellId, Count = s_count), maxUses = maxUses)
@@ -25,7 +29,7 @@ class Villager:
             return str(d)
 
     def getCommand(self):
-        aux = self.format_dict(self.format_dict(dict(VillagerData = dict(profession=self.prof, level=self.level, type=self.type), Offers = dict(Recipes = self.trades), CustomName = '"\\"'+self.name+'\\""')))
+        aux = self.format_dict(self.format_dict(dict(VillagerData = dict(profession=self.prof, level=self.level, type=self.type), Offers = dict(Recipes = self.trades), CustomName = '"\\"'+self.name+'\\""', ArmorItems = self.armor)))
         return "/summon villager ~ ~1 ~ " + aux.replace("'","")
 
 v = Villager("test", "swamp", "librarian", "5")
