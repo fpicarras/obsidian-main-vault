@@ -34,7 +34,7 @@ class Villager:
          aux = self.format_dict(dict(EntityTag = self.nbtData))
          return "/give @p villager_spawn_egg" + aux.replace("'","")
 
-v = Villager("test", "swamp", "librarian", "5", helmet="blue_stained_glass", hands="book")
+v = Villager("test", "swamp", "librarian", 5, helmet="blue_stained_glass", hands="book")
 v.addTrade("emerald", 1, "stone", 16)
 print(v.getEgg())
 
