@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "7ce63194e3d20ece",
+        "id": "e03989f48b549110",
         "type": "tabs",
         "children": [
           {
-            "id": "9d816d59e1906832",
+            "id": "35c45beffb20592c",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Notion/Code_Snippets/C.Lists/C.Lists.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Notion/Code_Snippets/C.Lists/C.Lists.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -101,6 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Notion/Code_Snippets/C.Lists/C.Lists.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +133,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Notion/Code_Snippets/C.Lists/C.Lists.md"
+              }
             }
           }
         ],
@@ -160,17 +168,40 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "homepage:Open homepage": false
+      "homepage:Open homepage": false,
+      "obsidian-importer:Open Importer": false
     }
   },
-  "active": "9d816d59e1906832",
+  "active": "35c45beffb20592c",
   "lastOpenFiles": [
+    "GoldenRift/teste.c",
+    "Notion/Code_Snippets/C.Stacks.md",
+    "Notion/Code_Snippets/C.Lists/C.Lists.md",
+    "Untitled 3.png.md",
+    "Notion/Code_Snippets/Code_Snippets.md",
+    "Images/c_original_logo_icon_146611.png",
+    "Images/Untitled 1.png",
+    "Images/Untitled 2.png",
+    "Images/Untitled 3.png",
+    "Images",
+    "Homepage.md",
+    "Images/programming-code-icon-15.png",
+    "Images/Untitled.png",
+    "doubleLinkedList_cs.zip",
+    "linkedList_cs.zip",
+    "Connectivity_cs.zip",
+    "Notion/Code_Snippets/C.Queues.md",
+    "Notion/Code_Snippets/C.Connectivity/C.Connectivity.md",
+    "Notion/Code_Snippets/C.Search_Algorithms.md",
+    "Notion/Code_Snippets/C.Lists",
+    "Notion/Code_Snippets/C.Connectivity",
+    "Notion/Code_Snippets",
+    "Notion",
     "GoldenRift/Trading System.md",
     "GoldenRift/Wares Trades/Animal.md",
     "GoldenRift/Wares Trades/Agri.md",
     "GoldenRift/Villager Command Generator.md",
     "GoldenRift/villagers.py",
-    "Homepage.md",
     "Welcome.md",
     "Teste.md",
     "Wares Trades.md",
@@ -179,27 +210,12 @@
     "GoldenRift/Trades/Animal.md",
     "GoldenRift/Trades.md",
     "GoldenRift/Trades/Agri.md",
-    "GoldenRift/Trades",
     "GoldenRift/test/Animal.md",
     "GoldenRift/test/Agri.md",
-    "GoldenRift/test",
     "GoldenRift/Animal.md",
     "GoldenRift/Agri.md",
     "GoldenRift/test.md",
-    "GoldenRift/pricings_wares.py",
-    "GoldenRift/GoldenRift-Pricing.xlsx",
     "DailyNotes/2024/07-July/2024-07-14-Sunday.md",
-    "GoldenRift/create a link.md",
-    "DailyNotes/2024/07-July/2024-07-08-Monday.md",
-    "GoldenRift",
-    "DailyNotes/2024/07-July/2024-07-03-Wednesday.md",
-    "DailyNotes/2024/07-July/2024-07-01-Monday.md",
-    "DailyNotes/2024/07-July",
-    "DailyNotes/2024/06-June/2024-06-30-Sunday.md",
-    "DailyNotes/Daily Notes Template.md",
-    "DailyNotes/2024/06-June",
-    "DailyNotes/2024",
-    "DailyNotes/2024/06-June/2024-06-17-Monday.md",
     "Untitled.canvas"
   ]
 }
