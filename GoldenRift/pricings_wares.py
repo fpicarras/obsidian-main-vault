@@ -1,4 +1,5 @@
 import pandas as pd
+import os
 
 class WaresCreator:
     def __init__(self, experience=0, expiresInSeconds=-1, ordered=-1) -> None:
@@ -72,23 +73,34 @@ class TradingPages:
         self.filePath = filePath
         self.newFileName = newFileName
 
-        self.data = pd.read_excel('GoldenRift-Pricing.xlsx')
-        self.data = self.data.groupby('Type')
-
     def createSinglePage(self):
-        md = MarkdownPage(name="test")
+        data = pd.read_excel(self.filePath)
+        data = self.data.groupby('Type')
+
+        md = MarkdownPage(name=self.newFileName)
         wc = WaresCreator(experience=10)
 
         # Print each group
-        for group_name, group_data in self.data:
+        for group_name, group_data in data:
+            print(group_name)
             md.addLine("# " + group_name)
             for index, row in group_data.iterrows():
                 command = wc.generate(row['ID'], row['Qty'], 'emerald', row['Sell Price (Unit)'])
                 md.addTrade(row['Name'], row['Qty'], 'Emerald', row['Sell Price (Unit)'], command)
             md.addLine("***")
+            md.write()
 
-#command = wc.generate("emerald", 4, "diamond", 1, backsideMessage="hihi", buyerName="filipe", message="Those stripped of the grace of gold shall all meet fate, in the embrace of Messmer´s Flame")
-#print(command)
+    def createMultiPage(self):
+        # Create the folder for housing the pages
+        folderName = "./" + self.newFileName
+        if not os.path.exists(folderName):
+            os.makedirs(folderName)
 
-#md.addTrade("Esmerald", 4, "Diamond", 1, command)
-md.write()
+        data = pd.read_excel(self.filePath)
+        group_names = data['Type'].unique()
+
+        for group_name in group_names:
+            md = MarkdownPage(name=group_name)
+
+
+        
