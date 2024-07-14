@@ -1,18 +1,14 @@
 class Villager:
     def __init__(self, name: str, type: str, profession: str, level: int, helmet=None, hands=None) -> None:
-        self.name = name
-        self.type = type
-        self.prof = profession
-        self.level = level
-        self.trades = []
+        self.nbtData = dict(VillagerData = dict(profession=profession, level=level, type=type), Offers = dict(Recipes = []))
         if helmet:
-            self.armor = [{}, {}, {}, dict(id=helmet, Count=1)]
-        else:
-            
+            self.nbtData["ArmorItems"] = [{}, {}, {}, dict(id=helmet, Count=1)]
+        if name:
+            self.nbtData["CustomName"] = '"\\"'+name+'\\""'
 
     def addTrade(self, buyId: str, b_count: int, sellId: str, s_count: int, maxUses = 9999999):
         aux = dict(buy = dict(id = buyId, Count = b_count), sell = dict(id = sellId, Count = s_count), maxUses = maxUses)
-        self.trades.append(aux)
+        self.nbtData["Offers"]["Recipes"].append(aux)
 
     def format_dict(self, d):
         if isinstance(d, dict):
@@ -29,10 +25,10 @@ class Villager:
             return str(d)
 
     def getCommand(self):
-        aux = self.format_dict(self.format_dict(dict(VillagerData = dict(profession=self.prof, level=self.level, type=self.type), Offers = dict(Recipes = self.trades), CustomName = '"\\"'+self.name+'\\""', ArmorItems = self.armor)))
+        aux = self.format_dict(self.nbtData)
         return "/summon villager ~ ~1 ~ " + aux.replace("'","")
 
-v = Villager("test", "swamp", "librarian", "5")
+v = Villager("test", "swamp", "librarian", "5", helmet="blue_stained_glass")
 v.addTrade("emerald", 1, "stone", 16)
 print(v.getCommand())
 
