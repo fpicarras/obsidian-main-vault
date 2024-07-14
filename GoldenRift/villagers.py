@@ -25,10 +25,12 @@ class Villager:
             return str(d)
 
     def getCommand(self):
-        return self.format_dict(dict(VillagerData = dict(profession=self.prof, level=self.level, type=self.type), Offers = dict(Recipes = self.trades)))
+        aux = self.format_dict(self.format_dict(dict(VillagerData = dict(profession=self.prof, level=self.level, type=self.type), Offers = dict(Recipes = self.trades), CustomName = '"\\"'+self.name+'\\""')))
+        return "/summon villager ~ ~1 ~ " + aux.replace("'","")
 
-v = Villager("test", "plains", "farmer", "5")
-v.addTrade("emerald", )
+v = Villager("test", "swamp", "librarian", "5")
+v.addTrade("emerald", 1, "stone", 16)
+print(v.getCommand())
 
 
     
