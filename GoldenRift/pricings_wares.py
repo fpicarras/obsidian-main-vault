@@ -109,7 +109,7 @@ class TradingPages:
 
 wc = WaresCreator(experience=10)
 test = TradingPages("GoldenRift-Pricing.xlsx", "Wares Trades", wc)
-test.createSinglePage()
+test.createMultiPage()
 
 
         

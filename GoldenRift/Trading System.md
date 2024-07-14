@@ -25,6 +25,9 @@ Relevant fields:
 - `experience` - _Integer_ or [Stepped Int](https://github.com/mortuusars/Wares/wiki/Sealed-Delivery-Agreement#stepped-int) - Finalized to a number.
 - `deliveryTime` - _Integer_ or [Stepped Int](https://github.com/mortuusars/Wares/wiki/Sealed-Delivery-Agreement#stepped-int) - Finalized to a number.
 - `expiresInSeconds` - _Integer_ or [Stepped Int](https://github.com/mortuusars/Wares/wiki/Sealed-Delivery-Agreement#stepped-int) - Finalized to a number.
+## Script
+
+> To improve trade making, a Python script and a Excel file were added in this directory, they allow for the easy creation of wares trades.
 ***
 # Pricing
 
@@ -35,3 +38,8 @@ Prices need to be based of the Vanilla item prices of the game. Aimed for the pr
 > Villagers are unique, because they allow some worldbuilding to occur, one could create stalls or custom villages that focus on some specific products; like a magic town or a wandering gypsy monster hunter!
 
 ## Datapack
+
+This [Datapack](https://www.planetminecraft.com/data-pack/villager-shop-creator/) allows us to create simple villager trades with a huge customization potential.
+On the downside... It requires in-game action... meaning we can't simply generate a script to do the job... Or can we 👀...
+
+
