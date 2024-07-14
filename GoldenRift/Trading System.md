@@ -28,6 +28,9 @@ Relevant fields:
 ## Script
 
 > To improve trade making, a Python script and a Excel file were added in this directory, they allow for the easy creation of wares trades.
+
+Currently Available:
+[[Agri]], [[Animal]], 
 ***
 # Pricing
 
