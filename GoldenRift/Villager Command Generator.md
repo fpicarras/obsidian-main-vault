@@ -40,5 +40,14 @@ The basic villager command is something like this:
 
 > There should be a Python script along with this file that allows to create custom villagers.
 
-This line creates a villager with the name "Midra" type *swamp*, profession *librarian* and level *5* (Master)
+This line creates a villager with the name "Midra" type *swamp*, profession *librarian* and level *5* (Master). There is also optional parameters for an helmet and a main hand item.
 `v = Villager("Midra", "swamp", "librarian", 5, helmet="blue_stained_glass", hands="book")`
+
+Adding a trade:
+`v.addTrade("emerald", 1, "stone", 16)`
+*16 Stones* for *1 Emerald*
+
+Get the command (String) to give the spawn egg of said villager...
+`v.getEgg()`
+... or get the command to summon:
+`v.getSummon()`
