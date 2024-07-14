@@ -22,7 +22,7 @@ class WaresCreator:
         else:
             return str(d)
 
-    def generate(self, requested, quantity, payment, price, title=None, buyerName=None, message=None, backsideMessage=None):
+    def generate(self, requested: str, quantity: int, payment: str, price: float, title=None, buyerName=None, message=None, backsideMessage=None):
         pay = []
         req = []
         pay.append(dict(id=payment, Count=price*quantity))
@@ -45,17 +45,17 @@ class WaresCreator:
         return self.base + self.format_dict(nbtData)
 
 class MarkdownPage:
-    def __init__(self, name) -> None:
+    def __init__(self, name: str) -> None:
         self.page = []
         self.name = name
 
-    def addTrade(self, requested_name, qty, payment_name, price, command):
+    def addTrade(self, requested_name: str, qty: int, payment_name: str, price: float, command: str):
         t_str = ["## " + requested_name]
         t_str.append(str(qty) + " **" + requested_name + "** for " + str(round(price*qty)) + " **" + payment_name+"**.")
         t_str.append("```" + command + "```")
         self.page += t_str
 
-    def addLine(self, text):
+    def addLine(self, text: str):
         self.page += [text]
     
     def write(self, path="./"):
@@ -69,23 +69,22 @@ class MarkdownPage:
             print(e)
 
 class TradingPages:
-    def __init__(self, filePath, newFileName) -> None:
+    def __init__(self, filePath: str, newFileName: str, waresCreator: WaresCreator) -> None:
         self.filePath = filePath
         self.newFileName = newFileName
+        self.wares = waresCreator
 
     def createSinglePage(self):
         data = pd.read_excel(self.filePath)
-        data = self.data.groupby('Type')
+        data = data.groupby('Type')
 
         md = MarkdownPage(name=self.newFileName)
-        wc = WaresCreator(experience=10)
 
         # Print each group
         for group_name, group_data in data:
-            print(group_name)
             md.addLine("# " + group_name)
             for index, row in group_data.iterrows():
-                command = wc.generate(row['ID'], row['Qty'], 'emerald', row['Sell Price (Unit)'])
+                command = self.wares.generate(row['ID'], row['Qty'], 'emerald', row['Sell Price (Unit)'])
                 md.addTrade(row['Name'], row['Qty'], 'Emerald', row['Sell Price (Unit)'], command)
             md.addLine("***")
             md.write()
@@ -100,7 +99,17 @@ class TradingPages:
         group_names = data['Type'].unique()
 
         for group_name in group_names:
-            md = MarkdownPage(name=group_name)
+            md = MarkdownPage(name=folderName + "/" + group_name)
+            group_data = data[data["Type"] == group_name]
+            for index, row in group_data.iterrows():
+                command = self.wares.generate(row['ID'], row['Qty'], 'emerald', row['Sell Price (Unit)'])
+                md.addTrade(row['Name'], row['Qty'], 'Emerald', row['Sell Price (Unit)'], command)
+            md.addLine("***")
+            md.write()
+
+wc = WaresCreator(experience=10)
+test = TradingPages("GoldenRift-Pricing.xlsx", "test", )
+test.createMultiPage()
 
 
         

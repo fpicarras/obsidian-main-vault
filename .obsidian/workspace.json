@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GoldenRift/test.md",
-                "mode": "preview",
+                "file": "GoldenRift/Trading System.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -94,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GoldenRift/test.md",
+                "file": "GoldenRift/Trading System.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GoldenRift/test.md",
+                "file": "GoldenRift/Trading System.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "GoldenRift/test.md"
+                "file": "GoldenRift/Trading System.md"
               }
             }
           }
@@ -173,8 +173,13 @@
   },
   "active": "9d816d59e1906832",
   "lastOpenFiles": [
-    "GoldenRift/Trading System.md",
+    "GoldenRift/test/Animal.md",
+    "GoldenRift/test/Agri.md",
+    "GoldenRift/test",
+    "GoldenRift/Animal.md",
+    "GoldenRift/Agri.md",
     "GoldenRift/test.md",
+    "GoldenRift/Trading System.md",
     "GoldenRift/pricings_wares.py",
     "GoldenRift/GoldenRift-Pricing.xlsx",
     "DailyNotes/2024/07-July/2024-07-14-Sunday.md",
