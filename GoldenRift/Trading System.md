@@ -42,4 +42,9 @@ Prices need to be based of the Vanilla item prices of the game. Aimed for the pr
 This [Datapack](https://www.planetminecraft.com/data-pack/villager-shop-creator/) allows us to create simple villager trades with a huge customization potential.
 On the downside... It requires in-game action... meaning we can't simply generate a script to do the job... Or can we 👀...
 
+## Commands
 
+This is wayyy funnier! You see a simple command for a villager would be like this:
+```/summon villager ~ ~1 ~ {VillagerData:{profession:farmer,level:2,type:plains},PersistenceRequired:1,Offers:{Recipes:[{buy:{id:acacia_boat,Count:1},sell:{id:emerald,Count:2},rewardExp:0b,priceMultiplier:0f,specialPrice:-1,demand:5,maxUses:9999999}]}}```
+
+And so... we can exploit this: [[Villager Command Generator]]
