@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "bb668fc6135e72a8",
+        "id": "7ce63194e3d20ece",
         "type": "tabs",
         "children": [
           {
-            "id": "f456da391b6048e4",
+            "id": "9d816d59e1906832",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homepage.md",
+                "file": "GoldenRift/test.md",
                 "mode": "preview",
                 "source": false
               }
@@ -64,9 +64,16 @@
               "type": "bookmarks",
               "state": {}
             }
+          },
+          {
+            "id": "f456da391b6048e4",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -87,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Homepage.md",
+                "file": "GoldenRift/test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -99,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Homepage.md",
+                "file": "GoldenRift/test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Homepage.md"
+                "file": "GoldenRift/test.md"
               }
             }
           }
@@ -164,13 +171,17 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "f456da391b6048e4",
+  "active": "9d816d59e1906832",
   "lastOpenFiles": [
     "GoldenRift/Trading System.md",
+    "GoldenRift/test.md",
+    "GoldenRift/pricings_wares.py",
+    "GoldenRift/GoldenRift-Pricing.xlsx",
+    "DailyNotes/2024/07-July/2024-07-14-Sunday.md",
+    "Homepage.md",
     "GoldenRift/create a link.md",
     "DailyNotes/2024/07-July/2024-07-08-Monday.md",
     "GoldenRift",
-    "Homepage.md",
     "DailyNotes/2024/07-July/2024-07-03-Wednesday.md",
     "DailyNotes/2024/07-July/2024-07-01-Monday.md",
     "DailyNotes/2024/07-July",
