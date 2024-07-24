@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "5f3d3d9f6d810f55",
+        "id": "2a5ff8447aae9b30",
         "type": "tabs",
         "children": [
           {
-            "id": "caac61b5049a9941",
+            "id": "35438a2fe64185a3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "GoldenRift/Wares Trades/Agri.md",
-                "mode": "preview",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -86,7 +82,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "GoldenRift/Wares Trades/Agri.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -98,7 +93,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "GoldenRift/Wares Trades/Agri.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "GoldenRift/Wares Trades/Agri.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -164,15 +156,17 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "caac61b5049a9941",
+  "active": "35438a2fe64185a3",
   "lastOpenFiles": [
+    "DailyNotes/2024/07-July/2024-07-24-Wednesday.md",
+    "Homepage.md",
+    "GoldenRift/Wares Trades/Agri.md",
     "Images/Untitled.png",
     "Images/Untitled 2.png",
     "Images/Untitled 3.png",
     "Images/Untitled 1.png",
     "Images/programming-code-icon-15.png",
     "Images/c_original_logo_icon_146611.png",
-    "Homepage.md",
     "Notion/Code_Snippets/C.Lists/C.Lists.md",
     "GoldenRift/teste.c",
     "Notion/Code_Snippets/C.Stacks.md",
@@ -191,7 +185,6 @@
     "Notion",
     "GoldenRift/Trading System.md",
     "GoldenRift/Wares Trades/Animal.md",
-    "GoldenRift/Wares Trades/Agri.md",
     "GoldenRift/Villager Command Generator.md",
     "GoldenRift/villagers.py",
     "Welcome.md",
