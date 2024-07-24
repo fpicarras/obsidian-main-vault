@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homepage.md",
-                "mode": "preview",
+                "file": "DailyNotes/2024/07-July/2024-07-24-Wednesday.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -86,7 +86,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Homepage.md",
+                "file": "DailyNotes/2024/07-July/2024-07-24-Wednesday.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Homepage.md",
+                "file": "DailyNotes/2024/07-July/2024-07-24-Wednesday.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Homepage.md"
+                "file": "DailyNotes/2024/07-July/2024-07-24-Wednesday.md"
               }
             }
           }
@@ -166,8 +166,10 @@
   },
   "active": "075cfd18ee04ffde",
   "lastOpenFiles": [
-    "DailyNotes/2024/07-July/2024-07-24-Wednesday.md",
     "Homepage.md",
+    "Recipes/Menu.md",
+    "Recipes",
+    "DailyNotes/2024/07-July/2024-07-24-Wednesday.md",
     "GoldenRift/Wares Trades/Agri.md",
     "Images/Untitled.png",
     "Images/Untitled 2.png",
@@ -194,7 +196,6 @@
     "GoldenRift/Trading System.md",
     "GoldenRift/Wares Trades/Animal.md",
     "GoldenRift/Villager Command Generator.md",
-    "GoldenRift/villagers.py",
     "Welcome.md",
     "Teste.md",
     "Wares Trades.md",
@@ -207,7 +208,6 @@
     "GoldenRift/Animal.md",
     "GoldenRift/Agri.md",
     "GoldenRift/test.md",
-    "DailyNotes/2024/07-July/2024-07-14-Sunday.md",
     "Untitled.canvas"
   ]
 }
