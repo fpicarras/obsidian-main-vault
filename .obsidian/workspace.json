@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "2a5ff8447aae9b30",
+        "id": "083b9fdfcea9c466",
         "type": "tabs",
         "children": [
           {
-            "id": "35438a2fe64185a3",
+            "id": "075cfd18ee04ffde",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Homepage.md",
+                "mode": "preview",
+                "source": false
+              }
             }
           }
         ]
@@ -82,6 +86,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Homepage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -93,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Homepage.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Homepage.md"
+              }
             }
           }
         ],
@@ -156,7 +164,7 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "35438a2fe64185a3",
+  "active": "075cfd18ee04ffde",
   "lastOpenFiles": [
     "DailyNotes/2024/07-July/2024-07-24-Wednesday.md",
     "Homepage.md",
