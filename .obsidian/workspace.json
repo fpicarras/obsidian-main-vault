@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a4f2bd7dbe1d72e1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Homepage.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Homepage.md",
+                "file": "conflict-files-obsidian-git.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Homepage.md"
+                "file": "conflict-files-obsidian-git.md"
               }
             }
           },
@@ -155,29 +168,50 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "1a1d15c4e648c823",
+  "active": "a4f2bd7dbe1d72e1",
   "lastOpenFiles": [
+    "Homepage.md",
+    "conflict-files-obsidian-git.md",
+    "linkedList_cs.zip",
+    "doubleLinkedList_cs.zip",
+    "Recipes/Menu.md",
+    "Recipes",
+    "Notion/Code_Snippets/C.Lists/C.Lists.md",
+    "Notion/Code_Snippets/C.Connectivity/C.Connectivity.md",
+    "Notion/Code_Snippets/Code_Snippets.md",
+    "Notion/Code_Snippets/C.Stacks.md",
+    "Notion/Code_Snippets/C.Search_Algorithms.md",
+    "Notion/Code_Snippets/C.Queues.md",
+    "Notion/Code_Snippets/C.Lists",
+    "Notion/Code_Snippets/C.Connectivity",
+    "Notion/Code_Snippets",
+    "Notion",
+    "Images/programming-code-icon-15.png",
+    "Images/c_original_logo_icon_146611.png",
+    "Images/Untitled.png",
+    "Images/Untitled 3.png",
+    "Images/Untitled 2.png",
+    "Images/Untitled 1.png",
+    "Images",
+    "GoldenRift/Wares Trades/Animal.md",
+    "GoldenRift/Wares Trades/Agri.md",
+    "GoldenRift/villagers.py",
+    "GoldenRift/pricings_wares.py",
+    "GoldenRift/Villager Command Generator.md",
+    "GoldenRift/Trading System.md",
+    "DailyNotes/2024/07-July/2024-07-24-Wednesday.md",
+    "DailyNotes/2024/07-July/2024-07-14-Sunday.md",
+    "DailyNotes/2024/07-July/2024-07-08-Monday.md",
     "DailyNotes/2024/07-July/2024-07-03-Wednesday.md",
     "DailyNotes/2024/07-July/2024-07-01-Monday.md",
-    "Homepage.md",
-    "DailyNotes/2024/07-July",
     "DailyNotes/2024/06-June/2024-06-30-Sunday.md",
     "DailyNotes/Daily Notes Template.md",
-    "DailyNotes/2024/06-June",
-    "DailyNotes/2024",
     "DailyNotes/2024/06-June/2024-06-17-Monday.md",
     "DailyNotes/{{date}}.md",
     "DailyNotes/2024-06-10.md",
-    "DailyNotes",
     "2024-W27.md",
     "2024-06-30.md",
     "Home.md",
-    "create a link.md",
-    "Teste.md",
-    "Untitled.canvas",
-    "Welcome.md",
-    "A madalena é gira.md",
-    "git.pub",
-    "git"
+    "Untitled.canvas"
   ]
 }
