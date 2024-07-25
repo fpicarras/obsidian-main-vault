@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "hello BEE prusa.md",
+                "file": "Projetos/hello BEE prusa/hello BEE prusa.md",
                 "mode": "source",
                 "source": false
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "hello BEE prusa.md",
+                "file": "Projetos/hello BEE prusa/hello BEE prusa.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "hello BEE prusa.md",
+                "file": "Projetos/hello BEE prusa/hello BEE prusa.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "hello BEE prusa.md"
+                "file": "Projetos/hello BEE prusa/hello BEE prusa.md"
               }
             }
           },
@@ -168,10 +168,11 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "54fd4c97d117d1b9",
+  "active": "e0f0b81a26599585",
   "lastOpenFiles": [
+    "Projetos/hello BEE prusa",
     "conflict-files-obsidian-git.md",
-    "hello BEE prusa.md",
+    "Projetos/hello BEE prusa/hello BEE prusa.md",
     "Projetos",
     "Homepage.md",
     "linkedList_cs.zip",
@@ -211,7 +212,6 @@
     "DailyNotes/{{date}}.md",
     "DailyNotes/2024-06-10.md",
     "2024-W27.md",
-    "2024-06-30.md",
     "Untitled.canvas"
   ]
 }
