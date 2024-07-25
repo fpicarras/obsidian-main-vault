@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "54fd4c97d117d1b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "hello BEE prusa.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "hello BEE prusa.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,6 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "hello BEE prusa.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -123,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "hello BEE prusa.md"
               }
             }
           },
@@ -153,10 +168,12 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "e0f0b81a26599585",
+  "active": "54fd4c97d117d1b9",
   "lastOpenFiles": [
-    "Homepage.md",
     "conflict-files-obsidian-git.md",
+    "hello BEE prusa.md",
+    "Projetos",
+    "Homepage.md",
     "linkedList_cs.zip",
     "doubleLinkedList_cs.zip",
     "Recipes/Menu.md",
@@ -181,7 +198,6 @@
     "GoldenRift/Wares Trades/Animal.md",
     "GoldenRift/Wares Trades/Agri.md",
     "GoldenRift/villagers.py",
-    "GoldenRift/pricings_wares.py",
     "GoldenRift/Villager Command Generator.md",
     "GoldenRift/Trading System.md",
     "DailyNotes/2024/07-July/2024-07-24-Wednesday.md",
@@ -196,7 +212,6 @@
     "DailyNotes/2024-06-10.md",
     "2024-W27.md",
     "2024-06-30.md",
-    "Home.md",
     "Untitled.canvas"
   ]
 }
