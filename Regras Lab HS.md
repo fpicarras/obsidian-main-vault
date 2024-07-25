@@ -11,4 +11,4 @@
 	1. Consultar o material disponível nos catálogos.
 	2. Arrumar sempre material que não estiver a ser utilizado para evitar bancadas excessivamente desarrumadas.
 	3. Trabalhos de solda têm de ser realizados com a porta aberta e/ou com o AC ligado para evitar a acumulação de gases tóxicos.
-	4. 
+	4. Se não souberes utilizar fontes de alimentação/osciloscópios contacta PEDE sempre ajuda para prevenir acidentes de trabalho. 
