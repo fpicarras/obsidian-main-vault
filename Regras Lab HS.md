@@ -10,4 +10,5 @@
 5. Electronica:
 	1. Consultar o material disponível nos catálogos.
 	2. Arrumar sempre material que não estiver a ser utilizado para evitar bancadas excessivamente desarrumadas.
-	3. Trabalhos de solda têm de ser realizados com a porta aberta e/ou com o AC ligado
+	3. Trabalhos de solda têm de ser realizados com a porta aberta e/ou com o AC ligado para evitar a acumulação de gases tóxicos.
+	4. 
