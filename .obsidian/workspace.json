@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "26516a2ee9e68573",
+        "id": "271671b6ab5a20cb",
         "type": "tabs",
         "children": [
           {
-            "id": "ae8e692417a1c1c8",
+            "id": "1a1d15c4e648c823",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DailyNotes/2024/07-July/2024-07-03-Wednesday.md",
+                "file": "Homepage.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DailyNotes/2024/07-July/2024-07-03-Wednesday.md",
+                "file": "Homepage.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DailyNotes/2024/07-July/2024-07-03-Wednesday.md",
+                "file": "Homepage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DailyNotes/2024/07-July/2024-07-03-Wednesday.md"
+                "file": "Homepage.md"
               }
             }
           },
@@ -155,10 +155,10 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "ae8e692417a1c1c8",
+  "active": "1a1d15c4e648c823",
   "lastOpenFiles": [
-    "DailyNotes/2024/07-July/2024-07-01-Monday.md",
     "DailyNotes/2024/07-July/2024-07-03-Wednesday.md",
+    "DailyNotes/2024/07-July/2024-07-01-Monday.md",
     "Homepage.md",
     "DailyNotes/2024/07-July",
     "DailyNotes/2024/06-June/2024-06-30-Sunday.md",
