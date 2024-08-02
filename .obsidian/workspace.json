@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "DailyNotes/2024/08-August/2024-08-02-Friday.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "768ce96049873a89",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Homepage.md",
                 "mode": "preview",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -156,13 +169,13 @@
       "homepage:Open homepage": false
     }
   },
-  "active": "c24d0f1bd2568b3d",
+  "active": "768ce96049873a89",
   "lastOpenFiles": [
-    "DailyNotes/2024/06-June/2024-06-30-Sunday.md",
+    "DailyNotes/2024/08-August/2024-08-02-Friday.md",
     "Homepage.md",
+    "DailyNotes/2024/06-June/2024-06-30-Sunday.md",
     "Recipes/Menu.md",
     "Projetos/hello BEE prusa/hello BEE prusa.md",
-    "DailyNotes/2024/08-August/2024-08-02-Friday.md",
     "DailyNotes/2024/08-August",
     "GoldenRift/Villager Command Generator.md",
     "GoldenRift/Trading System.md",
