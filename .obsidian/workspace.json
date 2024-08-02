@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DailyNotes/2024/08-August/2024-08-02-Friday.md",
-                "mode": "source",
+                "file": "Homepage.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "DailyNotes/2024/08-August/2024-08-02-Friday.md",
+                "file": "Homepage.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "DailyNotes/2024/08-August/2024-08-02-Friday.md",
+                "file": "Homepage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "DailyNotes/2024/08-August/2024-08-02-Friday.md"
+                "file": "Homepage.md"
               }
             }
           },
@@ -158,20 +158,20 @@
   },
   "active": "c24d0f1bd2568b3d",
   "lastOpenFiles": [
-    "Homepage.md",
+    "Recipes/Menu.md",
+    "Projetos/hello BEE prusa/hello BEE prusa.md",
     "DailyNotes/2024/08-August/2024-08-02-Friday.md",
+    "Homepage.md",
     "DailyNotes/2024/08-August",
     "GoldenRift/Villager Command Generator.md",
     "GoldenRift/Trading System.md",
     "Notion/Code_Snippets/Code_Snippets.md",
     "Regras Lab HS.md",
-    "Projetos/hello BEE prusa/hello BEE prusa.md",
     "Projetos/hello BEE prusa",
     "conflict-files-obsidian-git.md",
     "Projetos",
     "linkedList_cs.zip",
     "doubleLinkedList_cs.zip",
-    "Recipes/Menu.md",
     "Recipes",
     "Notion/Code_Snippets/C.Lists/C.Lists.md",
     "Notion/Code_Snippets/C.Connectivity/C.Connectivity.md",

@@ -1,4 +1,7 @@
 ***
+- [ ] 🔽 Arranjar formas
+- [ ] 🔽 Arranjar afiador de facas
+- [ ] 🔼  Arranjar luvas
 # Carnes
 
 ***
