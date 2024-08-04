@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "083b9fdfcea9c466",
+        "id": "3d7c58a4f99e07ca",
         "type": "tabs",
         "children": [
           {
-            "id": "075cfd18ee04ffde",
+            "id": "11c36a24ce16ed2d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Recipes/Menu.md",
-                "mode": "source",
+                "file": "Homepage.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -86,7 +86,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Recipes/Menu.md",
+                "file": "Homepage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Recipes/Menu.md",
+                "file": "Homepage.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Recipes/Menu.md"
+                "file": "Homepage.md"
               }
             }
           }
@@ -164,11 +164,11 @@
       "obsidian-importer:Open Importer": false
     }
   },
-  "active": "075cfd18ee04ffde",
+  "active": "11c36a24ce16ed2d",
   "lastOpenFiles": [
+    "Recipes/Menu.md",
     "DailyNotes/2024/07-July/2024-07-24-Wednesday.md",
     "Homepage.md",
-    "Recipes/Menu.md",
     "Recipes",
     "GoldenRift/Wares Trades/Agri.md",
     "Images/Untitled.png",
