@@ -6,6 +6,7 @@
 Com recurso ás listas duplamente ligadas, conseguimos criar uma nova estrutura de dados: as Queues ou Filas, com uma organização FIFO - First-In-First-Out. Para tal são criadas 5 novas funções, que nada mais são do que uma adaptação das funções declaradas em “doubleLinkedList.h”, como abaixo.
 
 > Para o seguinte exemplo de construção e utilização de filas simples foram utilizados os recursos disponibilizados para gestão de listas duplamente ligadas em [[C.Lists]].
+
 ```C
 \#include "doubleLinkedList.h"
 \#include <stdio.h>
@@ -55,5 +56,8 @@ int main(){
     return 0;
 }
 ```
+
 Esta queue tem a capacidade de armazenar qualquer tipo de dados e uma complexidade de execução de O(1)!
 O facto de ser realizada com listas permite que esta fila não tenha dimensão limite, o que acontece com um vetor, contudo, estas limitações podem ser implementadas com código posterior. É de notar que caso a queue esteja vazia, o pop/peek retornam NULL (consultar [[C.Lists]]).
+***
+# Priority Queue
