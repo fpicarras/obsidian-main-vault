@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Homepage.md",
+                "file": "Notion/Code_Snippets/C.Queues.md",
                 "mode": "preview",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Homepage.md",
+                "file": "Notion/Code_Snippets/C.Queues.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -98,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Homepage.md",
+                "file": "Notion/Code_Snippets/C.Queues.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Homepage.md"
+                "file": "Notion/Code_Snippets/C.Queues.md"
               }
             }
           }
@@ -166,9 +166,10 @@
   },
   "active": "9861148bc67df441",
   "lastOpenFiles": [
+    "Notion/Code_Snippets/Code_Snippets.md",
+    "Homepage.md",
     "conflict-files-obsidian-git.md",
     "Recipes/Menu.md",
-    "Homepage.md",
     "Projetos/hello BEE prusa/hello BEE prusa.md",
     "Projetos/hello BEE prusa",
     "Projetos",
@@ -187,7 +188,6 @@
     "GoldenRift/teste.c",
     "Notion/Code_Snippets/C.Stacks.md",
     "Untitled 3.png.md",
-    "Notion/Code_Snippets/Code_Snippets.md",
     "Images",
     "doubleLinkedList_cs.zip",
     "linkedList_cs.zip",
