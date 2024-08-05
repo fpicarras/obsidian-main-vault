@@ -241,6 +241,21 @@ void changePriority(BinaryHeap *heap, void *data, int newPriority) {
     }
 }
 
+void freeHashTableQueue(BinaryHeap *heap, int numItems) {
+    if (!heap) return;
+    // Free the nodes array
+    free(heap->nodes);
+    // Free the hash table
+    for (int i = 0; i < numItems; i++) {
+        if (heap->hashTable[i] != NULL) {
+            free(heap->hashTable[i]);
+        }
+    }
+    free(heap->hashTable);
+    // Free the heap structure itself
+    free(heap);
+}
+
 int main() {
     BinaryHeap *heap = createHeap(10, 20);
 
@@ -425,6 +440,17 @@ void changePriority(BinaryHeap *heap, int originalIndex, int newPriority) {
         heapifyDown(heap, heapIndex);
     }
 }
+
+void freeAuxiliaryArrayQueue(BinaryHeap *heap) {
+    if (!heap) return;
+    // Free the nodes array
+    free(heap->nodes);
+    // Free the auxiliary array
+    free(heap->indexToHeapPosition);
+    // Free the heap structure itself
+    free(heap);
+}
+
 
 int main() {
     BinaryHeap *heap = createHeap(10, 100); // Assume maximum of 100 unique items
