@@ -279,4 +279,171 @@ int main() {
 > [!important]  
 > To avoid the memmory overhead caused by the hashtable we will make Queue assuming that each item already has a corresponding index, and we use said index in an array to identify (in O(1)) the position of said item in the binary heap.
 > By doing this we also avoid the existence of hash collisions but the memmory complexity of the queue is now O(2n), where n is the total number of items.
+### Time Complexities
+- **Insertion**: O(log n)
+- **Extraction**: O(log n)
+- **Priority Change**: O(log n)
+
+### Memory Complexities
+- **Binary Heap**: O(n)
+- **Auxiliary Array**: O(m)
+- **Total Memory**: O(n + m)
+
+### Pros
+- Efficient insertions and deletions.
+- O(1) priority change access due to the auxiliary array.
+- Flexible and dynamic resizing.
+- Generic pointer storage.
+
+### Cons
+- Additional memory overhead.
+- Increased complexity in implementation.
+
+This implementation is suitable for scenarios where efficient priority changes are crucial and the additional memory overhead is acceptable.
 ## Code
+```C
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdint.h>
+
+typedef struct {
+    void *data;
+    int priority;
+    int originalIndex; // Original index of the item
+} HeapNode;
+
+typedef struct {
+    HeapNode *nodes;
+    int *indexToHeapPosition; // Auxiliary array mapping original index to heap position
+    int capacity;
+    int size;
+} BinaryHeap;
+
+BinaryHeap* createHeap(int capacity, int numItems) {
+    BinaryHeap *heap = (BinaryHeap *)malloc(sizeof(BinaryHeap));
+    if (!heap) return NULL;
+    heap->capacity = capacity;
+    heap->size = 0;
+    heap->nodes = (HeapNode *)malloc(sizeof(HeapNode) * capacity);
+    if (!heap->nodes) {
+        free(heap);
+        return NULL;
+    }
+    heap->indexToHeapPosition = (int *)malloc(sizeof(int) * numItems);
+    if (!heap->indexToHeapPosition) {
+        free(heap->nodes);
+        free(heap);
+        return NULL;
+    }
+    for (int i = 0; i < numItems; i++) {
+        heap->indexToHeapPosition[i] = -1; // Initialize to -1 indicating not in heap
+    }
+    return heap;
+}
+
+void heapifyUp(BinaryHeap *heap, int index) {
+    int parentIndex = (index - 1) / 2;
+    while (index > 0 && heap->nodes[index].priority > heap->nodes[parentIndex].priority) {
+        HeapNode temp = heap->nodes[index];
+        heap->nodes[index] = heap->nodes[parentIndex];
+        heap->nodes[parentIndex] = temp;
+
+        heap->indexToHeapPosition[heap->nodes[index].originalIndex] = index;
+        heap->indexToHeapPosition[heap->nodes[parentIndex].originalIndex] = parentIndex;
+
+        index = parentIndex;
+        parentIndex = (index - 1) / 2;
+    }
+}
+
+void insert(BinaryHeap *heap, void *data, int priority, int originalIndex) {
+    if (heap->size == heap->capacity) {
+        heap->capacity *= 2;
+        heap->nodes = (HeapNode *)realloc(heap->nodes, sizeof(HeapNode) * heap->capacity);
+        if (!heap->nodes) return;
+    }
+
+    int heapIndex = heap->size++;
+    heap->nodes[heapIndex].data = data;
+    heap->nodes[heapIndex].priority = priority;
+    heap->nodes[heapIndex].originalIndex = originalIndex;
+    heap->indexToHeapPosition[originalIndex] = heapIndex;
+
+    heapifyUp(heap, heapIndex);
+}
+
+void heapifyDown(BinaryHeap *heap, int index) {
+    int leftChild = 2 * index + 1;
+    int rightChild = 2 * index + 2;
+    int largest = index;
+
+    if (leftChild < heap->size && heap->nodes[leftChild].priority > heap->nodes[largest].priority) {
+        largest = leftChild;
+    }
+
+    if (rightChild < heap->size && heap->nodes[rightChild].priority > heap->nodes[largest].priority) {
+        largest = rightChild;
+    }
+
+    if (largest != index) {
+        HeapNode temp = heap->nodes[index];
+        heap->nodes[index] = heap->nodes[largest];
+        heap->nodes[largest] = temp;
+
+        heap->indexToHeapPosition[heap->nodes[index].originalIndex] = index;
+        heap->indexToHeapPosition[heap->nodes[largest].originalIndex] = largest;
+
+        heapifyDown(heap, largest);
+    }
+}
+
+void* extractMax(BinaryHeap *heap) {
+    if (heap->size == 0) return NULL;
+
+    void *maxData = heap->nodes[0].data;
+    int maxIndex = heap->nodes[0].originalIndex;
+
+    heap->nodes[0] = heap->nodes[--heap->size];
+    heap->indexToHeapPosition[heap->nodes[0].originalIndex] = 0;
+    heap->indexToHeapPosition[maxIndex] = -1; // Mark the original index as not in heap
+
+    heapifyDown(heap, 0);
+
+    return maxData;
+}
+
+void changePriority(BinaryHeap *heap, int originalIndex, int newPriority) {
+    int heapIndex = heap->indexToHeapPosition[originalIndex];
+    if (heapIndex == -1) return; // Element not in the heap
+
+    int oldPriority = heap->nodes[heapIndex].priority;
+    heap->nodes[heapIndex].priority = newPriority;
+
+    if (newPriority > oldPriority) {
+        heapifyUp(heap, heapIndex);
+    } else {
+        heapifyDown(heap, heapIndex);
+    }
+}
+
+int main() {
+    BinaryHeap *heap = createHeap(10, 100); // Assume maximum of 100 unique items
+
+    int data1 = 5, data2 = 10, data3 = 3;
+    insert(heap, &data1, 2, 0);
+    insert(heap, &data2, 5, 1);
+    insert(heap, &data3, 1, 2);
+
+    printf("Change priority of data3 (3) to 6\n");
+    changePriority(heap, 2, 6);
+
+    int *max = (int *)extractMax(heap);
+    if (max) printf("Max data: %d\n", *max);
+
+    free(heap->nodes);
+    free(heap->indexToHeapPosition);
+    free(heap);
+
+    return 0;
+}
+```
