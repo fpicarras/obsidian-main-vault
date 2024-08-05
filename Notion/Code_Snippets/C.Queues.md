@@ -64,21 +64,21 @@ O facto de ser realizada com listas permite que esta fila não tenha dimensão l
 # Priority Queue w/ Hash Table
 ## Summary
 
-### Time Complexities:
+### Time Complexities
 - **Insertion**: O(log n)
 - **Extraction**: O(log n)
 - **Priority Change**: O(log n)
 - **Hash Table Operations**: O(1)
-### Memory Complexities:
+### Memory Complexities
 - **Binary Heap**: O(n)
 - **Hash Table**: O(m)
 - **Total Memory**: O(n + m)
-### Pros:
+### Pros
 - Efficient insertions and deletions.
 - O(1) priority changes due to hash table.
 - Flexible and dynamic resizing.
 - Generic pointer storage.
-### Cons:
+### Cons
 - Additional memory overhead.
 - Increased complexity in implementation.
 - Potential for hash collisions.
@@ -272,3 +272,11 @@ int main() {
 }
 
 ```
+
+# Priority Queue (Indexed Data)
+
+## Summary
+> [!important]  
+> To avoid the memmory overhead caused by the hashtable we will make Queue assuming that each item already has a corresponding index, and we use said index in an array to identify (in O(1)) the position of said item in the binary heap.
+> By doing this we also avoid the existence of hash collisions but the memmory complexity of the queue is now O()
+## Code
