@@ -278,5 +278,5 @@ int main() {
 ## Summary
 > [!important]  
 > To avoid the memmory overhead caused by the hashtable we will make Queue assuming that each item already has a corresponding index, and we use said index in an array to identify (in O(1)) the position of said item in the binary heap.
-> By doing this we also avoid the existence of hash collisions but the memmory complexity of the queue is now O()
+> By doing this we also avoid the existence of hash collisions but the memmory complexity of the queue is now O(2n), where n is the total number of items.
 ## Code
