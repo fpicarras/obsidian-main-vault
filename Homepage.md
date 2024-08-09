@@ -10,7 +10,6 @@ action Daily notes: Open today's daily note
 path does not include DailyNotes
 short mode
 not done
-sort by priority
 ```
 # Daily Stuff
 ```tasks
