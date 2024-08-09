@@ -25,8 +25,17 @@ No ano de 23/24, eletro teve o PIC1, no meu grupo fizemos um ecossistema de sens
 Descomplicando um bocado (e esuqecendo a *rede* de sensores), acho que seria interessante eles fazerem um pequeno dispositivo que se espetasse na terra e medisse a qualidade de umas flores que tenham em casa ou até uma mini-horta. Envolveria:
  
 - Prog - programar o controlador em micropython (seguimento do workshop de python);
-- Eletrónica dar assemble no circuito, maioritariamente digital; design da pcb e soldadura;
+- Eletrónica - dar assemble no circuito, maioritariamente digital; design da pcb e soldadura;
 - WebDev - Criar uma webapp que dava display dos dados recolhidos, dar host em Micropython? [Sim](https://github.com/miguelgrinberg/microdot);
 - 3dMod - Modelar caixa, imprimir;
 
-Talvez seja bastante simples, mas envolveria várias areas, desde dimensionamento de baterias para o circuito até criação de uma pequena base de dados com uma webapp. Cada uma destas taréfas 
+Talvez seja bastante simples, mas envolveria várias areas, desde dimensionamento de baterias para o circuito até criação de uma pequena base de dados com uma webapp. Cada uma destas tarefas seria na verdade simples.
+
+## Projeto 3: Macro's Keyboard
+
+Acho que foi o Fecha que sugeriu ontem na reunião, um "teclado extra" que permite adicionar Macro's facilmente. Ou seja, botões que tem um atalho pré-programado, como por exemplo abrir programas, executar scripts, atalhos para determinadas aplicações (Photoshop, Blender, etc.).
+Tal como as anteriores, esta parece-me simples e tem a sua utilidade. Envolveria:
+
+- Prog - programar a interface e fazer um GUI *(?)*;
+- Eletrónica - dar assemble no circuito, design pcb e soldadura;
+- 3dMod - Modelar caixa, botões, etc.
