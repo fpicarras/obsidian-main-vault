@@ -23,5 +23,10 @@ Mini-sintetizador para eles construírem; não foi proposto por mim e não sei a
 
 No ano de 23/24, eletro teve o PIC1, no meu grupo fizemos um ecossistema de sensores capazes de medir a qualidade do terreno/plantação a nível industrial por LoRa e assins... Se quiserem ver mais está aqui o [blog](https://web.tecnico.ulisboa.pt/ist1103681/).
 Descomplicando um bocado (e esuqecendo a *rede* de sensores), acho que seria interessante eles fazerem um pequeno dispositivo que se espetasse na terra e medisse a qualidade de umas flores que tenham em casa ou até uma mini-horta. Envolveria:
-- Prog - programar o controlador em micropython (seguimento do workshop de python)
-- Eletrónica dar assemble no circuito 
+ 
+- Prog - programar o controlador em micropython (seguimento do workshop de python);
+- Eletrónica dar assemble no circuito, maioritariamente digital; design da pcb e soldadura;
+- WebDev - Criar uma webapp que dava display dos dados recolhidos, dar host em Micropython? [Sim](https://github.com/miguelgrinberg/microdot);
+- 3dMod - Modelar caixa, imprimir;
+
+Talvez seja bastante simples, mas envolveria várias areas, desde dimensionamento de baterias para o circuito até criação de uma pequena base de dados com uma webapp. Cada uma destas taréfas 
