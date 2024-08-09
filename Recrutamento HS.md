@@ -46,4 +46,4 @@ Contudo, não temos webdev... acho que seria interessante e compensar com um wor
 ## Conclusão
 
 Os projetos que aqui mencionei são simples e mesmo que não envolvam todas as areas, acho que se mantém fazível um workshop isolado para as abordar.
-Não me ocorreu nenhuma ideia para AppDev (um bocado biased pq tenho 0 experiência). Mas a WebApp que mencionei no [Projeto 2](#Pro)
+Não me ocorreu nenhuma ideia para AppDev (um bocado biased pq tenho 0 experiência). Mas a WebApp que mencionei no [Projeto 2] pode ser trocada por APPDev...
