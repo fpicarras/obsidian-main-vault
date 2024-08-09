@@ -12,4 +12,13 @@ Não sei se a ideia de cada membro do grupo ter uma parte electronica funcionari
 
 ## Projeto 1: Synth
 
-Mini-sintetizador para eles construírem,  
+Mini-sintetizador para eles construírem; não foi proposto por mim e não sei as especificações que os autores idealizaram, mas acredito que envolveria as áreas de:
+- Prog - Programar interface;
+- Eletrónica - Montagem do circuito, design da pcb e soldadura;
+- 3dMod - Modelação da caixa, botẽs, etc. Impressão 3D;
+- Mixing *(?)*;
+É um projeto fixe, mas quão simples de aprender seria o circuito? Se for maioritariamente analógico como seria o debug para a malta que não percebe de eletro?
+
+## Projeto 2: Medidor qualidade de plantas.
+
+No ano de 23/24, eletro teve o PIC1, no meu grupo fizemos um ecossistema de sensores capazes de medir a qualidade do terreno
