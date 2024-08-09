@@ -1,3 +1,4 @@
+# Ideia (inicial) de Projecto Integral
 Como já tinha falado na reunião, tento a opinião que o recrutamento deveria consistir num protejo integral que era acompanhado de workshops. Estes projectos iriam abranger quase todas as areas que lhes queremos ensinar, como:
 -  Programação (Python/C/C++)
 -  Electrónica (Sensores/Actuadores/*design**)
@@ -38,4 +39,11 @@ Tal como as anteriores, esta parece-me simples e tem a sua utilidade. Envolveria
 
 - Prog - programar a interface e fazer um GUI *(?)*;
 - Eletrónica - dar assemble no circuito, design pcb e soldadura;
-- 3dMod - Modelar caixa, botões, etc.
+- 3dMod - Modelar caixa, botões, etc. Imprimir;
+
+Contudo, não temos webdev... acho que seria interessante e compensar com um workshop dedicado a GUI's.
+
+## Conclusão
+
+Os projetos que aqui mencionei são simples e mesmo que não envolvam todas as areas, acho que se mantém fazível um workshop isolado para as abordar.
+Não me ocorreu nenhuma ideia para AppDev (um bocado biased pq tenho 0 experiência). Mas a WebApp que mencionei no [Projeto 2](#Pro)
