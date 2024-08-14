@@ -18,6 +18,6 @@ Sensor de humidade/temperatura poderia ser um [DHT11](https://www.ptrobotics.com
 Fazendo alguma pesquisa, o [XIAO # - Seeed 101010001](https://mauser.pt/catalog/product_info.php?products_id=095-3163) parece ser o que precisamos, tem a capacidade de detectar presença humana até 5m de distância com um precisão de 0.75m, medindo também se há movimentos.
 Contudo, apenas utilizaríamos a funcionalidade de detecção de presença. que funciona com uma amplitude de 60º:
 
-![Diagrama de funcionamento](https://storage.googleapis.com/mauser-public-images/prod_description_image%2F2024%2F45%2F10f4239f132430559cd730af7b6d0882_image.png)
+![Diagrama de funcionamento | center](https://storage.googleapis.com/mauser-public-images/prod_description_image%2F2024%2F45%2F10f4239f132430559cd730af7b6d0882_image.png)
 
 
