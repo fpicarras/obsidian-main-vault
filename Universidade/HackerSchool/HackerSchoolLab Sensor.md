@@ -15,5 +15,5 @@ Minha opinião é ser um ESP32-C3, são viáveis e super baratos para todas as f
 ## Temperatura/Humidade
 Sensor de humidade/temperatura poderia ser um [DHT11](https://www.ptrobotics.com/atmosfericos/2333-dht11-basic-temperature-humidity-sensor.html) pois é fácil de calibrar com o único Downside de ter alguns segundos ter *sampling rate* (aproximadamente 2), limitando assim período de amostragem do dispositivo.
 ## Presença Humana
-Fazendo alguma pesquisa, o [XIAO # - Seeed 101010001](https://mauser.pt/catalog/product_info.php?products_id=095-3163) parece ser o que precisamos, tem a capacidade 
+Fazendo alguma pesquisa, o [XIAO # - Seeed 101010001](https://mauser.pt/catalog/product_info.php?products_id=095-3163) parece ser o que precisamos, tem a capacidade de detetar presença humana até 5m de distância com um precisão de 0.75m, com 
 
