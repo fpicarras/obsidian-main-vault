@@ -5,7 +5,7 @@ Primeiro que tudo, é preciso um nome melhor para esta merda
 > - Presenças
 > - Temperatura
 > - Humidade
-> - Fumos
+> - Fumos (a sala já tem um sensor, se calhar na vale muito a pena)
 >
  Dando assim display da informação remotamente.
 
@@ -21,5 +21,4 @@ Contudo, apenas utilizaríamos a funcionalidade de detecção de presença. que 
 
 ![Diagrama de funcionamento | center](https://storage.googleapis.com/mauser-public-images/prod_description_image%2F2024%2F45%2F10f4239f132430559cd730af7b6d0882_image.png)
 
-## Sensor de Fumo
-Embora existem várias soluções no mercado
+
