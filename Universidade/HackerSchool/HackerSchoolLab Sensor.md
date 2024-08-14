@@ -20,7 +20,9 @@ Fazendo alguma pesquisa, o [XIAO - Seeed 101010001](https://mauser.pt/catalog/pr
 Contudo, apenas utilizaríamos a funcionalidade de detecção de presença. que funciona com uma amplitude de 60º:
 
 ![Diagrama de funcionamento | center](https://storage.googleapis.com/mauser-public-images/prod_description_image%2F2024%2F45%2F10f4239f132430559cd730af7b6d0882_image.png)
+## Qualidade do Ar
 
+***
 # Comunicação e Exposição
 Seria por POST em HTTP, para um servidor externo. Idealmente, a mensagem era enviada para o server com o site na HackerSchool, onde era disposta a informação recolhida.
 O site também ter a opção de devolver essa informação era porreiro, pois assim conseguia-se criar aplicações com base nisso. Tipo um simples display à entrada do lab que dizia se havia gente ou não.
