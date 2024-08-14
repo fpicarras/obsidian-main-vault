@@ -21,7 +21,7 @@ Contudo, apenas utilizaríamos a funcionalidade de detecção de presença. que 
 
 ![Diagrama de funcionamento | center](https://storage.googleapis.com/mauser-public-images/prod_description_image%2F2024%2F45%2F10f4239f132430559cd730af7b6d0882_image.png)
 ## Qualidade do Ar
-
+O [MQ-135](https://www.ptrobotics.com/atmosfericos/6226-mq-135-air-quality-sensor-detection-module.html) é um sensor que mede a qualidade a qualidade do ar
 ***
 # Comunicação e Exposição
 Seria por POST em HTTP, para um servidor externo. Idealmente, a mensagem era enviada para o server com o site na HackerSchool, onde era disposta a informação recolhida.
