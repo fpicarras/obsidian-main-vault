@@ -26,4 +26,6 @@ Seria por POST em HTTP, para um servidor externo. Idealmente, a mensagem era env
 O site também ter a opção de devolver essa informação era porreiro, pois assim conseguia-se criar aplicações com base nisso. Tipo um simples display à entrada do lab que dizia se havia gente ou não.
 
 # Alimentação
+Não vejo a necessidade de utilizar baterias, acho que é bastante prático apenas ligar o USB-C do controlador a um tranformador eficiente e está resolvido.
 
+# 
