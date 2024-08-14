@@ -26,6 +26,7 @@ Seria por POST em HTTP, para um servidor externo. Idealmente, a mensagem era env
 O site também ter a opção de devolver essa informação era porreiro, pois assim conseguia-se criar aplicações com base nisso. Tipo um simples display à entrada do lab que dizia se havia gente ou não.
 
 # Alimentação
-Não vejo a necessidade de utilizar baterias, acho que é bastante prático apenas ligar o USB-C do controlador a um tranformador eficiente e está resolvido.
+Não vejo a necessidade de utilizar baterias, acho que é bastante prático apenas ligar o USB-C do controlador a um transformador eficiente e está resolvido.
 
-# 
+# Posicionamento
+A sala tem aproximadamente 3m (desde a porta até ás janelas), a melhor opção pelo que estou a ver seria colocar o sensor na parede da janela em cima da mesma. Deste modo, garante-se que existe cobertura suficiente na sala toda e também bloqueia o sensor de medir a presença de pessoas no lab aberto.
