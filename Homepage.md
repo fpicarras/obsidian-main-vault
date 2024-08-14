@@ -7,6 +7,8 @@ action Daily notes: Open today's daily note
 # Indices
 [[Universidade]]
 [[Projetos]]
+[[Menu]]
+
 
 # To-Do
 ## All
