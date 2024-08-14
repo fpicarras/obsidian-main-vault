@@ -20,6 +20,13 @@
         "a": 1,
         "rgb": 9554291
       }
+    },
+    {
+      "query": "file:Homepage",
+      "color": {
+        "a": 1,
+        "rgb": 15155264
+      }
     }
   ],
   "collapse-display": true,
@@ -27,11 +34,11 @@
   "textFadeMultiplier": -0.3,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1.00598958333333,
-  "collapse-forces": true,
+  "collapse-forces": false,
   "centerStrength": 0.497395833333333,
-  "repelStrength": 7.86458333333333,
+  "repelStrength": 7.40037105751391,
   "linkStrength": 1,
   "linkDistance": 129,
   "scale": 1,
-  "close": true
+  "close": false
 }
