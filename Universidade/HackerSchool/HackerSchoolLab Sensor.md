@@ -6,7 +6,8 @@ Primeiro que tudo, é preciso um nome melhor para esta merda
 > - Temperatura
 > - Humidade
 > - Fumos
-> Dando assim display da informação remotamente.
+>
+ Dando assim display da informação remotamente.
 
 # Componentes
 ## Micro-controlador
