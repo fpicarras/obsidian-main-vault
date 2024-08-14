@@ -2,5 +2,8 @@
   "cssTheme": "Obsidian Nord",
   "monospaceFontFamily": "NotoSans Nerd Font",
   "textFontFamily": "",
-  "interfaceFontFamily": ""
+  "interfaceFontFamily": "",
+  "enabledCssSnippets": [
+    "Image Align"
+  ]
 }
