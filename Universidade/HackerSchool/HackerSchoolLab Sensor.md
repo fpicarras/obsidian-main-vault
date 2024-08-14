@@ -24,3 +24,6 @@ Contudo, apenas utilizaríamos a funcionalidade de detecção de presença. que 
 # Comunicação e Exposição
 Seria por POST em HTTP, para um servidor externo. Idealmente, a mensagem era enviada para o server com o site na HackerSchool, onde era disposta a informação recolhida.
 O site também ter a opção de devolver essa informação era porreiro, pois assim conseguia-se criar aplicações com base nisso. Tipo um simples display à entrada do lab que dizia se havia gente ou não.
+
+# Alimentação
+
