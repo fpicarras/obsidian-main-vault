@@ -8,6 +8,7 @@ action Daily notes: Open today's daily note
 [[Universidade]]
 [[Projetos]]
 [[Menu]]
+[[Code_Snippets]]
 
 
 # To-Do
