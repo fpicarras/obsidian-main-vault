@@ -5,7 +5,7 @@ Primeiro que tudo, é preciso um nome melhor para esta merda
 > - Presenças
 > - Temperatura
 > - Humidade
-> - Fumos (a sala já tem um sensor, se calhar na vale muito a pena)
+> - Qualidade do AR
 >
  Dando assim display da informação remotamente.
 
