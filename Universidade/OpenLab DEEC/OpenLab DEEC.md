@@ -14,7 +14,7 @@
 
 ## Hw/Sw
 - Redes Wi-Fi
-- Redes BLE (?)
+- Redes LoRa (?)
 - Domótica
 - MicroPython - Fullstack num ESP32 👀
 - 
