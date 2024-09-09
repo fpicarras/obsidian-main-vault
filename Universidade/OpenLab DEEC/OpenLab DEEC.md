@@ -11,7 +11,6 @@
 - Arduinos
 - PCB design (?)
 - Soldadura
-- 
 
 ## Hw/Sw
 - Redes Wi-Fi
