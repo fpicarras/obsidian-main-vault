@@ -8,7 +8,14 @@
 ***
 # Lista de Workshops
 ## Eletrónica
-- Domótica
 - Arduinos
-- PCB design (?
+- PCB design (?)
 - Soldadura
+
+## Hw/Sw
+- Redes Wi-Fi
+- Redes BLE (?)
+- Domótica
+- MicroPython - Fullstack num ESP32 👀
+- 
+
