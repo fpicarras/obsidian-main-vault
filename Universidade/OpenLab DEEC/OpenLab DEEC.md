@@ -18,5 +18,5 @@
 - Domótica
 - MicroPython - Fullstack num ESP32 👀
 - FPGA's
-- 
+- Vivado?
 
