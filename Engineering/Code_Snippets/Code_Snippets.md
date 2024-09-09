@@ -8,7 +8,7 @@ Esta página serve como repositório para vários exemplos de estruturas de dado
 [[C.Queues]]
 [[C.Stacks]]
 
-- [ ] Priority Queues with "acervos"
+- [x] Priority Queues with "acervos" ✅ 2024-09-09
 - [ ] Sorting Algorithms
 - [ ] Trees
 - [ ] Graphs
