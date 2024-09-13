@@ -9,3 +9,11 @@
 
 >L13 João Pedrosa 23    - 0,0
 >	Inês Santos        - S/ Aval
+
+# Nos labs, sem GP
+| Nos meus labs                              |
+| ------------------------------------------ |
+| luis.f.bernardo@tecnico.ulisboa.pt         |
+| ricardo.a.filipe@tecnico.ulisboa.pt        |
+| larissa.montefusco7@gmail.com              |
+| daniel.alexandre.mendes@tecnico.ulisboa.pt |
