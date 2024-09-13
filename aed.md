@@ -9,4 +9,3 @@
 
 >L13 João Pedrosa 23    - 0,0
 >	Inês Santos        - S/ Aval
-
