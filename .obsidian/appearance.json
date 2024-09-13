@@ -1,6 +1,9 @@
 {
   "cssTheme": "Obsidian Nord",
-  "monospaceFontFamily": "NotoSans Nerd Font",
-  "textFontFamily": "",
-  "interfaceFontFamily": ""
+  "monospaceFontFamily": "BlexMono Nerd Font",
+  "textFontFamily": "BlexMono Nerd Font",
+  "interfaceFontFamily": "BlexMono Nerd Font",
+  "enabledCssSnippets": [
+    "Image Align"
+  ]
 }

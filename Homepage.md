@@ -4,15 +4,21 @@ type command
 action Daily notes: Open today's daily note
 ```
 ***
+# Indices
+[[Universidade]]
+[[Projetos]]
+[[Menu]]
+[[Code_Snippets]]
+
+
 # To-Do
 ## All
 ```tasks
 path does not include DailyNotes
 short mode
 not done
-sort by priority
 ```
-# Daily Stuff
+## Daily Stuff
 ```tasks
 short mode
 not done

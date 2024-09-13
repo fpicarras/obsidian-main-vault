@@ -1,6 +1,6 @@
 {
-  "collapse-filter": true,
-  "search": "",
+  "collapse-filter": false,
+  "search": "-path:DailyNotes  ",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
@@ -20,6 +20,20 @@
         "a": 1,
         "rgb": 9554291
       }
+    },
+    {
+      "query": "file:Homepage",
+      "color": {
+        "a": 1,
+        "rgb": 15155264
+      }
+    },
+    {
+      "query": "path:Universidade/HackerSchool  ",
+      "color": {
+        "a": 1,
+        "rgb": 6084188
+      }
     }
   ],
   "collapse-display": true,
@@ -27,11 +41,11 @@
   "textFadeMultiplier": -0.3,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1.00598958333333,
-  "collapse-forces": true,
-  "centerStrength": 0.497395833333333,
-  "repelStrength": 7.86458333333333,
+  "collapse-forces": false,
+  "centerStrength": 0.697736549165121,
+  "repelStrength": 12.1875,
   "linkStrength": 1,
-  "linkDistance": 129,
+  "linkDistance": 57,
   "scale": 1,
   "close": true
 }
