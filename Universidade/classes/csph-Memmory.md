@@ -14,3 +14,9 @@
 # Memory
 
 Each core can run 1 thread at a time, but, we can use the stall times to run other processes. This is done by having bigger register banks (**Execution Context**)
+
+## Bandwidth
+
+> Te rate at which the memory system can provide data to a processor, example: 20GB/s.
+
+**Latency** is the amount of time it takes to for the first set of data to arrive.
