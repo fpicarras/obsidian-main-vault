@@ -21,3 +21,7 @@ Each core can run 1 thread at a time, but, we can use the stall times to run oth
 
 **Latency** is the amount of time it takes to for the first set of data to arrive.
 We can use data pipelining ([[cpsh-Pipeline]])to increase bandwidth.
+
+### GPU's
+GPU's have lower memory capacities but they have way better memory-cores interfaces, allowing for bigger bandwidths. This happens because they invest way more on communication.
+There is a lot of switching between warps in a GPU so having a huge bandwidth is a must!!

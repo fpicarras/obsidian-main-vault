@@ -6,4 +6,3 @@ In a pipeline, the slowest stage is the one that limits the system.
 In a processor, we separate the execution in different stages, allowing us to have multiple instructions at the same time in the pipeline.
 A **memory bound execution** is what happens when instructions have to stop the pipeline because they are waiting for the memory (which is a very slow system in an architecture [[csph-Memmory]]).
 
-In gpu's we have way better 
