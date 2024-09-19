@@ -1,8 +1,6 @@
 ***
 ```button
-name Create Note 
-type command 
-action templater:replace-template 
-templater_template class-template.md 
-folderpath Universidade
+name My New Button
+type command
+action Templater: Create new note from template
 ```

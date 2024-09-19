@@ -5,7 +5,7 @@ action Daily notes: Open today's daily note
 ```
 ***
 # Indices
-[[Universidade]]
+[[Universidade/Universidade]]
 [[Projetos]]
 [[Menu]]
 [[Code_Snippets]]
