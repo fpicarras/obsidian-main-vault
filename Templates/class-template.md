@@ -1,6 +1,6 @@
----
-title: <% tp.date.now("YYYY-MM-DD") %> 
-Note created: <% tp.date.now("YYYY-MM-DD HH:mm") %> 
-tags: <% tp.file.tags() %> 
---- 
-## Daily Notes - This is a note created using a template.
+<%*
+const fileNameDate = tp.date.now("YYYY-MM-DD--HH-mm")
+const Folder = "Universidade/"
+await tp.file.create_new("","Meeting--" + fileNameDate,true)
+await tp.file.move(Folder)
+%>
