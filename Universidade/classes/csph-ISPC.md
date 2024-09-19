@@ -13,6 +13,6 @@ This code is fully serial, however, it will by mapped to different lanes, giving
 
 ![[Pasted image 20240919114709.png]]
 
-Instead of a typical for loop, we can use **foreach** that automaticly maps the loops and variables for us.
+Instead of a typical for loop, we can use **foreach** that automatically maps the loops and variables for us.
 
-> It is important, for efficiency purpouses, that we distribute the data in an interveaved manner. So that the that is effciently mapped to the lanes (instead of the blocked manner which is better for threads).
+> It is important, for efficiency purposes, that we distribute the data in an interleaved manner. So that the that is efficiently mapped to the lanes (instead of the blocked manner which is better for threads).
