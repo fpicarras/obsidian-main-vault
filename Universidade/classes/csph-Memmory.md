@@ -13,4 +13,4 @@
 
 # Memory
 
-Each core can run 1 thread at a time, but, we can use the stall times to run other processes. This is done by having bigger register banks
+Each core can run 1 thread at a time, but, we can use the stall times to run other processes. This is done by having bigger register banks (**Execution Context**)
