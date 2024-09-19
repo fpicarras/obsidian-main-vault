@@ -11,7 +11,8 @@ We use **uniform** to tag the variables that can be accessed by all lanes.
 
 This code is fully serial, however, it will by mapped to different lanes, giving the illusion of the same program having multiple threads processing.
 
-![[Pasted image 20240919114601.png]]
+![[Pasted image 20240919114709.png]]
 
+Instead of a typical for loop, we can use **foreach** that automaticly maps the loops and variables for us.
 
-Instead of a typical for loop, we can use **foreach**
+> It is important, for efficiency purpouses, that we distribute the data in an interveaved manner. So that the that is effciently mapped to the lanes (instead of the blocked manner which is better for threads).
