@@ -14,4 +14,4 @@ Hence, we need solutions to solve big/multiple problems beyond increasing freque
 ## [[csph-ILP|Instruction Level Parallelism]]
 
 Or *ILP*, was used to attempt to speed-up code execution by parallelizing code on the hardware level. Independent instructions could be run ate the same time.
-However th
+However this resulted on another wall.
