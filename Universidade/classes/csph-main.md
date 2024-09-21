@@ -11,5 +11,7 @@ However, we start hitting a wall after a certain threshold where the frequency i
 
 Hence, we need solutions to solve big/multiple problems beyond increasing frequency. To fix this, we started adding executions units to run multiple things in parallel.
 
-## [[csph-ILP]]()
+## [[csph-ILP|Instruction Level Parallelism]]
 
+Or *ILP*, was used to attempt to speed-up code execution by parallelizing code on the hardware level. Independent instructions could be run ate the same time.
+However th
