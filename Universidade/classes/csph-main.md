@@ -14,5 +14,7 @@ Hence, we need solutions to solve big/multiple problems beyond increasing freque
 > Code now has to be prepared to be parallelised in order to increase it's computation efficiency. 
 ## [[csph-ILP|Instruction Level Parallelism]]
 
-Or *ILP*, was used to attempt to speed-up code execution by parallelizing code on the hardware level. Independent instructions could be run ate the same time.
+Or [[csph-ILP|ILP]], was used to attempt to speed-up code execution by parallelizing code on the hardware level. Independent instructions could be run ate the same time.
 However this resulted on another wall: multiple instructions ate the same time did not prove efficient.
+
+Before the *multi-core era* processors where "smarter", they had multiple logic units, out-of-order controls, memory pre-fetchers and higher clock frequencies.
