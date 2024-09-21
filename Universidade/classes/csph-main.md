@@ -1,7 +1,12 @@
 ***
-```button
-name My New Button
-type command
-action Templater: Create new note from template
-folderpath Universidade/classes
-```
+# Concepts
+[[csph-ILP]]
+
+***
+# First Touches
+For multiple years, the performance improvements we saw on computers where due to advancements done in single processors, where arquitetural upgrades and frequency increases caused the CPU's speedup to sky-rocket.
+
+However, we start hitting a wall after a certain threshold where the frequency is so high that not only the CPU consumes a lot, but it also melts :)
+
+Hence, we need solutions 
+
