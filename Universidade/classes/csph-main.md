@@ -18,3 +18,7 @@ Or [[csph-ILP|ILP]], was used to attempt to speed-up code execution by paralleli
 However this resulted on another wall: multiple instructions ate the same time did not prove efficient.
 
 Before the *multi-core era* processors where "smarter", they had multiple logic units, out-of-order controls, memory pre-fetchers and higher clock frequencies.
+
+![[pre-multi-core-cpu.png|center]]
+
+Multi-core processors are slower at running a single instruction 
