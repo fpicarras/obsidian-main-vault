@@ -17,6 +17,10 @@ This code is fully serial, however, it will by mapped to different lanes, giving
 Instead of a typical for loop, we can use **foreach** that automatically maps the loops and variables for us.
 
 > It is important, for efficiency purposes, that we distribute the data in an interleaved manner. So that the that is efficiently mapped to the lanes (instead of the blocked manner which is better for threads).
+
+## Sum Reduction
+Imagine that we need to sum all elements in an array, we can't have multiple instances adding to the same register, that concurrency would corrupt the data.
+Therefore we use (from the ISPC library) **reduce_add()**
 ***
 # Inner Workings
 - **Compiling**: The ISPC compiler translates this code into efficient SIMD instructions specific to the target hardware. For example, it might generate AVX2 or AVX-512 instructions, depending on the CPU.
@@ -28,6 +32,8 @@ Instead of a typical for loop, we can use **foreach** that automatically maps th
 	- These program instances are grouped into "gangs," where each gang represents a group of instances executing together in parallel using SIMD. The number of instances per gang usually matches the SIMD width of the hardware (e.g., 4-wide, 8-wide).
 
 - **Scaling**: If the array is large and the CPU has multiple cores, ISPC can divide the work across several gangs, running them on different cores for additional parallelism.
+
+- [ ] #question In the task manager are going to appear multiple programs?
 ***
 # What's the difference from [[csph-threads|Threads]]?
 ## 1. **Parallelism Model**:
