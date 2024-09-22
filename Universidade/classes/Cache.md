@@ -65,4 +65,9 @@ Is the concept of taking advantage of data being stored sequentially to minimize
 | **Coherence Policy**     | Keeping caches synchronized in multi-core systems          | MESI, MOESI                      |
 ***
 # Multi-Level Caches
-There is limited space in the integrated circuit near the cores, so caches can not be that big. Hence we introduce multiple levels, 
+There is limited space in the integrated circuit near the cores, so caches can not be that big. Hence we introduce multiple levels, the closer you are to the processor cores the faster but also the smallest.
+This translates to a system of successive requests (much like a DNS server) where if the data isn't in L1 we forward to L2, then to L3 then finally to the DRAM - this is called **Memory Hierarchy**.
+
+![[cache-hierarchy.png|center]]
+
+Accesses not satisfied in local memory cause communication with next level. So, managing locality to reduce the amount of communication performed is important at all levels!
