@@ -1,5 +1,5 @@
 ***
-ISPC is a way to make use of the SIMD architectures without having to go trough the troubles of learning the [[Intrinsics]].
+ISPC is a way to make use of the [[csph-SIMD|SIMD]] architectures without having to go trough the troubles of learning the Intrinsics.
 We can do this by decorating the code with specific tags.
 
 ISPC works by lauching a "gand" of program instances that work in parallell.

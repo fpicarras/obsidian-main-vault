@@ -36,3 +36,8 @@ This is a dual core processor, able to run 2 threads in parallel and on each cor
 
 ![[simd-16cores.png|center]]
 ***
+# SPMD and ISPC
+
+> SPMD - Single Process Multiple Data.
+> [[csph-ISPC|ISPC]] - Intel SPMD Program Compiler.
+
