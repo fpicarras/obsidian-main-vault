@@ -20,7 +20,7 @@ Instead of a typical for loop, we can use **foreach** that automatically maps th
 
 ## Sum Reduction
 Imagine that we need to sum all elements in an array, we can't have multiple instances adding to the same register, that concurrency would corrupt the data.
-Therefore we use (from the ISPC library) **reduce_add()**
+Therefore we use (from the ISPC library) **reduce_add()**, which is a cross-instance communication primitive. 
 ***
 # Inner Workings
 - **Compiling**: The ISPC compiler translates this code into efficient SIMD instructions specific to the target hardware. For example, it might generate AVX2 or AVX-512 instructions, depending on the CPU.
@@ -30,6 +30,7 @@ Therefore we use (from the ISPC library) **reduce_add()**
 - **Runtime Execution**: At runtime, the program instances (one for each array element) are grouped into gangs. Each gang processes a batch of elements in parallel using SIMD.
 	- ISPC runs multiple program instances concurrently, each instance working on a different set of data (this is similar to how GPU kernels work).
 	- These program instances are grouped into "gangs," where each gang represents a group of instances executing together in parallel using SIMD. The number of instances per gang usually matches the SIMD width of the hardware (e.g., 4-wide, 8-wide).
+	![[spmd-exec.png|center]]
 
 - **Scaling**: If the array is large and the CPU has multiple cores, ISPC can divide the work across several gangs, running them on different cores for additional parallelism.
 

@@ -55,3 +55,8 @@ The key concept is to have the same program running on multiple data in order to
 | Overhead          | Low (SIMD instructions, less context switching)             | Higher (thread context switching, synchronization)        |
 | Use Case          | Vectorized tasks like scientific computing, graphics        | General purpose tasks like servers, background processing |
 In summary, ISPC is designed for **high-performance data-parallelism**, whereas threads provide more flexibility for **task-parallelism** across independent operations. ISPC focuses on vectorizing operations to take advantage of **SIMD** units, while threads are used for broader parallelism across multiple CPU cores.
+***
+# Memory
+
+> Now that we talked about execution optimizations, let's divulge into the second key concept in computer architectures - [[csph-Memmory|Memory]]!
+
