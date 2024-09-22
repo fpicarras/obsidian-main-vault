@@ -14,7 +14,8 @@ This is called a **critical section**, it is where multiple threads modify a sha
 
 Consider that the threads write in different position of the array. What happens now is that when a thread writes to that variable, the cache line (which contains the array) will be dirty, hence, all the other threads need to update it's cache.
 Although methods like this are each ways to modify global variables without corruption (because they are not writing in the same position), they make the program slower because of the consecutive memory updates needed to be done.
-# pthreads
+***
+# C pthreads
 
 >Or POSIX threads, are the standard milti-threading in C.
 ```C
@@ -70,4 +71,9 @@ void* increment_counter(void* arg) {
 }
 ```
 
-We are using a **mutex** to lock a critical region: when a thread attemp
+We are using a **mutex** to lock a critical region: when a thread attempts to enter the critical region, it has to lock the mutex, do the code and then unlock it. If by chance there is a thread already in the critical region, thread that wanted to lock it will have to wait in a queue for it's turn. Much like we wait in line for a public bathroom.
+***
+# C++11 Threads
+
+This function exactly the same way as **pthreads** but it is easier to understand.
+
