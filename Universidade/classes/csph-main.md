@@ -61,3 +61,4 @@ In summary, ISPC is designed for **high-performance data-parallelism**, whereas 
 > Now that we talked about execution optimizations, let's divulge into the second key concept in computer architectures - [[csph-Memmory|Memory]]!
 
 A computer's memory is organized as an array of bytes, each bytes is identified by it's **address** in memory (it's position in this array).
+Memory is a very slow component, a processor as to stall it's execution when it can not run it's next instruction in an instruction strem because of a dependency 
