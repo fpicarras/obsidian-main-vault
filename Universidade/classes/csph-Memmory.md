@@ -8,8 +8,11 @@
 - Multi-threading - With hide the latency to access the memory by using the stall intervals to run other threads/processes in the same core.
 # Compiler Optimizations
 
+All modern CPUs have logic for prefetching data into caches - Dynamically analyse program’s access pattern, predict what it will access soon.
+Note: Prefetching can also reduce performance if the guess is wrong (hogs bandwidth, pollutes caches).
 # Multi-Threading
 
+Idea: interleave processing of multiple threads on the same core to hide stalls.
 Each core can run 1 thread at a time, but, we can use the stall times to run other processes. This is done by having bigger register banks (**Execution Context**)
 
 ## Bandwidth

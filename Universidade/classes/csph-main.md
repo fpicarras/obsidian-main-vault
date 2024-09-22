@@ -65,3 +65,5 @@ Memory is a very slow component, a processor as to stall it's execution when it 
 There are ways we can mask the memory latency:
 
 - **[[Cache]]** - If an address is stored “in the cache” (cache hit), the CPU can load/store that data more quickly than if the data resides only in DRAM.
+- **Compiler Optimizations** - Dynamically analyse program’s access pattern, predict what it will access soon and then pre-fetch data, hiding the "stalls".
+- **Multi-Threading** - Idea: interleave processing of multiple threads on the same core to hide stalls; like prefetching, multi-threading is a latency hiding, not a latency reducing technique.
