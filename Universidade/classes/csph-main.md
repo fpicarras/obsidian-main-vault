@@ -77,5 +77,5 @@ We can mix and match with [[csph-ILP|ILP]], having the same thread in both of th
 ## What about a GPU?
 ![[Pasted image 20240922164148.png|center]]
 ![[Pasted image 20240922164242.png|center]]
-
+- [ ] #question Where do we arrive on 48 warps?
 ***
