@@ -12,7 +12,12 @@
 > On-chip storage, keeps a copy of a subset of DRAM data - If an address is stored “in the cache” (cache hit), the CPU can load/store that data more quickly than if the data resides only in DRAM
 
 A cache is a hardware implementation detail that does not impact the output of a program, only it's performance. In fact, caches are transparent to the programmer.
+When we load a value from memory we forward that request to the cache (instead of the RAM), the cache verifies that it has the value or not, if it has, returns that value with minimum latency, if it doesn't we have to forward that request to the higher levels of cache or RAM. 
 
+To avoid having to always ask the RAM for values, we receive from the cache an array of consecutive bytes, this is called *data locality*.
+## Data Locality
+
+Is the concept of taking advantage of data being stored s
 # Compiler Optimizations
 
 # Multi-Threading
