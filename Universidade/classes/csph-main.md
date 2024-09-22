@@ -23,4 +23,5 @@ Before the *multi-core era* processors where "smarter", they had multiple logic 
 
 Multi-core processors are slower at running a single instruction stream then a single-core.
 But even if they are 25% slower, two cores at the same time (75% efficiency each) would be a speed-up of 150%.
+
 ***
