@@ -92,4 +92,26 @@ To simplify the programming of code that makes use of SIMD processing, we create
 
 ### Masking
 To fix the *conditional execution* problem we add masks, which are an extra parameter (**__vBool**) that almost all of the operations support that only allows for said operation to be executed on the lanes that are active 1 in the mask.
-For example a mask like: [1 0 0 0 0 0 0 1]
+For example a mask like [1 0 0 0 0 0 0 1] will only allow **vmul(v1, v2, mask)** to be applied on the first and last lane.
+
+- [ ] #question What happen to the other lanes. Do they just get copied?
+## Let's Vectorize!
+Consider the following code:
+```Cpp
+float* A = new float[N];
+float* B = new float[N];
+float* C = new float[N];
+float k = const;
+// initialize A and B here
+
+for (int i=0; i<N; i+=2){
+	float a = A[i]; //load
+	float b = B[i]; //load
+	float c = k*a*b; //mul
+	C[i] = c; //store
+}
+```
+It would look like:
+```Cpp
+
+```
