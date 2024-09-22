@@ -19,13 +19,17 @@ In assembly the code is sequential, when we do not satisfy an *if* we jump over 
 Coherent execution is not necessary for efficient parallelization across cores, since each core is capable of fetching/decoding different instruction streams.
 *Divergent Execution* is what we call when different lanes are never operating simultaneously.
 
+In the worst case, poorly written code might execute at 1/L the peak capability of the machine, where L is the number of lanes.
+
 ## Execution... On modern CPU's
 ### Instructions
 #SSE - 128-bit: 4x32 bits or 2x64 bits (4-wide vectors)
 #AVX2 - 256-bit: 8x32 bits or 4x64 bits (8-wide vectors)
 #AVX512 - 512-bit: 16x32 bits or 8x64 bits (16-wide vectors)
-### Generation
 
+In modern GPU's lanes have ranges from 8 to 32.
+### Generation
+This instructions can be generated on compile time or by explicit request via *intrinsics*. 
 
 ***
 # Why not Threads?
@@ -60,3 +64,6 @@ void sinx(int N, int terms, float* x, float* result){
 ```
 The code is way too complicated, even though is just a simple translation.
 Notice how we now increment the outer loop iterator in batches of 8, from this code we can determine that it was done for a CPU with 8 SIMD lanes.
+
+## "Fake" Intrinsics
+
