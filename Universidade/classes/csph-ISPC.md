@@ -28,3 +28,14 @@ Instead of a typical for loop, we can use **foreach** that automatically maps th
 	- These program instances are grouped into "gangs," where each gang represents a group of instances executing together in parallel using SIMD. The number of instances per gang usually matches the SIMD width of the hardware (e.g., 4-wide, 8-wide).
 
 - **Scaling**: If the array is large and the CPU has multiple cores, ISPC can divide the work across several gangs, running them on different cores for additional parallelism.
+***
+# What's the difference from [[csph-threads|Threads]]?
+
+| Feature           | ISPC (SPMD+SIMD)                                      | Threads (MIMD)                                      |
+| ----------------- | ----------------------------------------------------- | --------------------------------------------------- |
+| Parallelism Model | Data-parallel, same program on multiple data elements | Task-parallel, different tasks on different threads |
+| Execution Model   |                                                       |                                                     |
+|                   |                                                       |                                                     |
+|                   |                                                       |                                                     |
+|                   |                                                       |                                                     |
+|                   |                                                       |                                                     |
