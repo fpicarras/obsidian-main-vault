@@ -67,3 +67,10 @@ Notice how we now increment the outer loop iterator in batches of 8, from this c
 
 ## "Fake" Intrinsics
 
+To simplify the programming of code that makes use of SIMD processing, we created *"Fake" intrincis*. Therefore we don't need to know how many lanes we have, or what operations are supported, we just have abstract operations.
+### Data Types
+- **__vint** - Instance of an INT array.
+- **__vfloat** - Instance of a Float array.
+- **__vbool** - Instance of a Boolean array.
+### Data movement
+- **vVar = _vload(\\*mem_addr)**  
