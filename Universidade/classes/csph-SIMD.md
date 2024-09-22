@@ -98,20 +98,35 @@ For example a mask like [1 0 0 0 0 0 0 1] will only allow **vmul(v1, v2, mask)**
 ## Let's Vectorize!
 Consider the following code:
 ```Cpp
-float* A = new float[N];
-float* B = new float[N];
-float* C = new float[N];
-float k = const;
-// initialize A and B here
+float* in = new float[N];
+float* out = new float[N];
+// initialize “in” here
 
-for (int i=0; i<N; i+=2){
-	float a = A[i]; //load
-	float b = B[i]; //load
-	float c = k*a*b; //mul
-	C[i] = c; //store
+for (int i=0; i<N; i++){
+	float x = in[i];
+	float y;
+	if (x < 0)
+		y = -x;
+	else
+		y = x;
+	out[i] = y;
 }
 ```
 It would look like:
 ```Cpp
+float* in = new float[N];
+float* out = new float[N];
+// initialize “in” here
 
+for (int i=0; i<N; i+=8){
+	__vfloat x = _vload(&in[i]);
+	__vfloat y;
+	__vfloat zeros = _vbcast(0.f);
+	__vbool mask = _vlt(x,zeros);
+	y = _vsub(zeros,x,mask);
+	mask = _vnot(mask);
+	y = _vcopy(y,x,mask);
+	_vstore(&out[i],y);
+}
 ```
+
