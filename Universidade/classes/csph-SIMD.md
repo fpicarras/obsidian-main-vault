@@ -73,4 +73,12 @@ To simplify the programming of code that makes use of SIMD processing, we create
 - **__vfloat** - Instance of a Float array.
 - **__vbool** - Instance of a Boolean array.
 ### Data movement
-- **vVar = _vload(\\*mem_addr)**  
+- **vVar = \_vload(\*mem_addr)** - Loads L elements from the address given.
+- **\_vstore(\*mem_addr, vVar)** - Stores L elements (from vVar) to the address given.
+- **vDst = \_vcopy(vDst, vSrc)** - Copies what is vSrc to vDst.
+### Operations
+- **vR = \_vadd(v1, v2)** - Adds v1 and v2.
+- **vR = \_vsub(v1, v2)** - Subtracts v1 from v1.
+- **vR = \_vmul(v1, v2)** - multiplies v1 by v2.
+### Logic Operations
+- **vbR = \_vnot(vBool)** - Inverts the boolean values 
