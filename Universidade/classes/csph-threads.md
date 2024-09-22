@@ -6,8 +6,13 @@ Another useful example of threads are in user interfaces or network servers, thr
 
 # Concurrency
 
-A big problem with threads is the access to shared resources, meaning: consider two threads that increment the same global variable, this threads will load the variable  
+A big problem with threads is the access to shared resources, meaning: consider two threads that increment the same global variable, this threads will load the variable (which at the time has value *X*) and increment it, now both have value *X+1* then they store it.
+Notice the problem: it was supposed to have value *X+2* but because the threads operated in the same variable at the same time there was a data corruption.
+This is called a **critical section**, it is where multiple threads modify a shared resource. In order to prevent it's corruption we have to use **Semaphores** to coordinate the access to the variable.
 
+## False Sharing
+
+Consider that the threads write in different position of the array. What happens now is that when a thread writes to that variable, the cache line (which contains the array) will be dirty, hence, all the other threads need to update it's 
 # pthreads
 
 >Or POSIX threads, are the standard milti-threading in C.
