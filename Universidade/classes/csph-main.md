@@ -27,6 +27,6 @@ But even if they are 25% slower, two cores at the same time (75% efficiency each
 ## [[csph-threads|Threads]]
 
 Thread are a mechanism used by programmers to parallelize code, they allow for the execution of multiple instruction streams in a process. However, the amount of hardware needed to run them is significant because they are not *ILP* and need multiple cores to truly run in parallel.
-![[Pasted image 20240922112519.png|center]]
+![[simple-dual-core.png|center]]
 This is a dual core processor, able to run 2 threads in parallel and on each core 2 instruction per clock (*ILP*).
 ***
