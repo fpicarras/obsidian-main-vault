@@ -19,10 +19,24 @@ Each core can run 1 thread at a time, but, we can use the stall times to run oth
 
 We don't fix the latency issue, however, by using the stall time to run another hardware thread we increase the throughput of the CPU.
 ## Limitations
+
 Notice that these threads are not running in parallel, in fact, they are concurring for the core's resources.
 The potential of this hardware threads is limited by the size of their *Executions Context* (Register banks). We can have a processor with a lot of register banks (allowing for high latency hiding ability/multiple hardware threads) but we would be limited by capacity.
 
-## Bandwidth
+## Implementation
+
+Core manages Execution contexts for multiple threads:
+- Runs instructions from runnable threads (processor makes decision about which thread to run each clock, not the operating system).
+- Core still has the same number of ALU resources: multi-threading only helps use them more efficiently in the face of high-latency operations like memory access.
+
+Interleaved multi-threading:
+- What we described on the previous slides: each clock, the core chooses a thread, and runs an instruction from the thread on the ALUs.
+
+Simultaneous multi-threading (SMT):
+- Each clock, core chooses instructions from multiple threads to run on ALUs.
+- Extension of superscalar CPU design.
+- Example: Intel Hyper-threading (2 threads per core).
+# Bandwidth
 
 > Te rate at which the memory system can provide data to a processor, example: 20GB/s.
 
