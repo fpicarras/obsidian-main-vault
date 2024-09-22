@@ -19,7 +19,8 @@ Each core can run 1 thread at a time, but, we can use the stall times to run oth
 
 We don't fix the latency issue, however, by using the stall time to run another hardware thread we increase the throughput of the CPU.
 ## Limitations
-Notice that
+Notice that these threads are not running in parallel, in fact, they are concurring for the core's resources.
+The potential of this hardware threads is limited by the size of their *Executions Context* (Register banks). We can have a processor with a lot of register banks (allowing for high latency hiding ability/multiple hardware threads) but we would be limited by capacity.
 
 ## Bandwidth
 
