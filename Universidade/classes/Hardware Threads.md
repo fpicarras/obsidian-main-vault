@@ -21,11 +21,8 @@ The potential of this hardware threads is limited by the size of their _Executi
 - **Thread Switching**: If one thread is stalled (e.g., waiting for data from memory), the other thread can use the core's execution resources, which increases overall utilization. The core chooses a thread, and runs an instruction from the thread on the ALUs.
 - **Instruction Fetch and Decode**: Each logical core fetches and decodes its own set of instructions from memory. These instructions are then dispatched to the shared execution units of the core.
 - **Execution**: Multiple threads can have instructions executed in parallel, as long as there are available execution units. If one thread doesn't need to use all the execution units, the other thread can fill the gap. Core still has the same number of ALU resources: multi-threading only helps use them more efficiently in the face of high-latency operations like memory access.
+## Benefits
 
-Interleaved multi-threading:
-- What we described on the previous slides: each clock, t
-
-Simultaneous multi-threading (SMT):
-- Each clock, core chooses instructions from multiple threads to run on ALUs.
-- Extension of superscalar CPU design.
-- Example: Intel Hyper-threading (2 threads per core).
+- **Increased Throughput**: By allowing two threads to run on a single core, Hyper-Threading can increase the overall throughput of a processor, especially for workloads with lots of idle time (e.g., waiting for memory).
+- **Better Resource Utilization**: If one thread isn't using all the core's resources (e.g., execution units, memory bandwidth), the other thread can utilize them, improving efficiency.
+- **Multitasking**: Hyper-Threading can improve performance in multitasking scenarios where different processes are running simultaneously. It allows the processor to switch between threads without the need for expensive context switches at the OS level.
