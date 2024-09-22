@@ -13,7 +13,13 @@ Note: Prefetching can also reduce performance if the guess is wrong (hogs bandwi
 # Multi-Threading
 
 Idea: interleave processing of multiple threads on the same core to hide stalls.
-Each core can run 1 thread at a time, but, we can use the stall times to run other processes. This is done by having bigger register banks (**Execution Context**)
+Each core can run 1 thread at a time, but, we can use the stall times to run other processes. This is done by having bigger register banks (**Execution Context**) - this concept is called **Hyper-Threading**
+
+![[Pasted image 20240922151924.png|center]]
+
+We don't fix the latency issue, however, by using the stall time to run another hardware thread we increase the throughput of the CPU.
+## Limitations
+Notice that
 
 ## Bandwidth
 
