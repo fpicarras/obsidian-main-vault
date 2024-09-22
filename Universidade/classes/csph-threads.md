@@ -12,7 +12,8 @@ This is called a **critical section**, it is where multiple threads modify a sha
 
 ## False Sharing
 
-Consider that the threads write in different position of the array. What happens now is that when a thread writes to that variable, the cache line (which contains the array) will be dirty, hence, all the other threads need to update it's 
+Consider that the threads write in different position of the array. What happens now is that when a thread writes to that variable, the cache line (which contains the array) will be dirty, hence, all the other threads need to update it's cache.
+Although methods like this are each ways to modify global variables without corruption (because they are not writing in the same position), they make the program slower because of the consecutive memory updates needed to be done.
 # pthreads
 
 >Or POSIX threads, are the standard milti-threading in C.
@@ -69,3 +70,4 @@ void* increment_counter(void* arg) {
 }
 ```
 
+We are using a **mutex** to lock a critical region: when a thread attemp
