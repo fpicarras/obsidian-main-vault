@@ -42,4 +42,16 @@ This is a dual core processor, able to run 2 threads in parallel and on each cor
 > [[csph-ISPC|ISPC]] - Intel SPMD Program Compiler.
 
 Since programming SIMD compatible code is boring. Intel developed a mechanism (and it's respective compiler) that takes advantage of SIMD units to speed-up performance for data-parallel tasks.
-The key concept is to have the same program running on multiple data
+The key concept is to have the same program running on multiple data in order to make use of SIMD units.
+
+## Whats the difference from [[csph-threads|Threads]]?
+
+| Feature           | ISPC (SPMD+SIMD)                                            | Threads (MIMD)                                            |
+| ----------------- | ----------------------------------------------------------- | --------------------------------------------------------- |
+| Parallelism Model | Data-parallel, same program on multiple data elements       | Task-parallel, different tasks on different threads       |
+| Execution Model   | SIMD-based, operates on vector data in parallel             | Independent thread execution across multiple cores        |
+| Granularity       | Fine-grained, focused on data-parallel operations           | Coarse-grained, focused on task-level parallelism         |
+| Synchronization   | Minimal need for synchronization (data usually independent) | Requires explicit synchronization (mutexes, locks)        |
+| Overhead          | Low (SIMD instructions, less context switching)             | Higher (thread context switching, synchronization)        |
+| Use Case          | Vectorized tasks like scientific computing, graphics        | General purpose tasks like servers, background processing |
+In summary, ISPC is designed for **high-performance data-parallelism**, whereas threads provide more flexibility for **task-parallelism** across independent operations. ISPC focuses on vectorizing operations to take advantage of **SIMD** units, while threads are used for broader parallelism across multiple CPU cores.
