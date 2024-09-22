@@ -65,3 +65,4 @@ Is the concept of taking advantage of data being stored sequentially to minimize
 | **Coherence Policy**     | Keeping caches synchronized in multi-core systems          | MESI, MOESI                      |
 ***
 # Multi-Level Caches
+There is limited space in the integrated circuit near the cores, so caches can not be that big. Hence we introduce multiple levels, 
