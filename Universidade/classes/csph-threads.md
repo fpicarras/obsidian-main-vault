@@ -77,3 +77,44 @@ We are using a **mutex** to lock a critical region: when a thread attempts to en
 
 This function exactly the same way as **pthreads** but it is easier to understand.
 
+```C++
+#include <iostream>
+#include <thread>
+#include <mutex>
+
+int counter = 0;  // Shared resource
+std::mutex mtx;   // Mutex to protect the shared resource
+
+void increment_counter() {
+    for (int i = 0; i < 100000; ++i) {
+        std::lock_guard<std::mutex> lock(mtx);  // Automatically locks and unlocks
+        ++counter;  // Critical section
+    }
+}
+
+int main() {
+    // Create two threads
+    std::thread thread1(increment_counter);
+    std::thread thread2(increment_counter);
+
+    // Wait for both threads to finish
+    thread1.join();
+    thread2.join();
+
+    // Print the final value of the counter
+    std::cout << "Final counter value: " << counter << std::endl;
+
+    return 0;
+}
+```
+
+The syntax is different, but the concept is the same.
+
+## std::thread
+Is the variable type, that store a reference to a spawned thread.
+
+## std::thread(thread_function, args)
+Returns a thread reference and executes *thread_function* with has many arguments has we want.
+
+## .join()
+Is a method (from the *std::thread* object) that waits for the respective thread's completion.
