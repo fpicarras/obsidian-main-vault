@@ -30,3 +30,6 @@ Thread are a mechanism used by programmers to parallelize code, they allow for t
 ![[simple-dual-core.png|center]]
 This is a dual core processor, able to run 2 threads in parallel and on each core 2 instruction per clock (*ILP*).
 ***
+# SIMD - Single Instruction Multiple Data
+
+[[csph-SIMD|SIMD]] is a hardware optimization that allows for parallel processing of consecutive elementes of an array, removing the need for calling 
