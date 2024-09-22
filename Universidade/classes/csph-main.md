@@ -32,4 +32,6 @@ This is a dual core processor, able to run 2 threads in parallel and on each cor
 ***
 # SIMD - Single Instruction Multiple Data
 
-[[csph-SIMD|SIMD]] is a hardware optimization that allows for parallel processing of consecutive elementes of an array, removing the need for calling 
+[[csph-SIMD|SIMD]] is a hardware optimization that allows for parallel processing of consecutive elements of an array, removing the need for calling different threads (with the same function) for different chunks of said array.
+
+![[simd-16cores.png|center]]

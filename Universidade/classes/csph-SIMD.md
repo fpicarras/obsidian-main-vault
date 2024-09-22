@@ -3,10 +3,17 @@
 
 Of coarse we need to modify the code in order to support **SIMD**, because this process requires specific instructions.
 ![[simd-example.png|center]]
+## Conditional Execution
+
+It's all fun and games when we run the same operations on all the elements, but what if those operations are conditional? For example if an element is bigger than 100 do nothing on it...
+
+This is where **lane masking** comes into play: we stop
+
+***
 # Why not Threads?
 
 [[csph-threads|Threads]] are software concepts, they require multiple core to operate properly, *SIMD* are physical processing lanes that a processor has that allow for multiple data to have the same process applied to it in the same core in a single clock.
-
+***
 # How to code?
 
 Intel created a package called **intrinsics** that allows for C programmers to make use of *SIMD*, however...
