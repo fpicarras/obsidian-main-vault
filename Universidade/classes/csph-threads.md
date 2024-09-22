@@ -77,7 +77,7 @@ We are using a **mutex** to lock a critical region: when a thread attempts to en
 
 This function exactly the same way as **pthreads** but it is easier to understand.
 
-```C++
+```Cpp
 #include <iostream>
 #include <thread>
 #include <mutex>
@@ -118,3 +118,6 @@ Returns a thread reference and executes *thread_function* with has many argument
 
 ## .join()
 Is a method (from the *std::thread* object) that waits for the respective thread's completion.
+
+## std::mutex
+Are a bit more complicated, they lock an entire scope, when that variable goes out of scope, the mutex is unlocked.
