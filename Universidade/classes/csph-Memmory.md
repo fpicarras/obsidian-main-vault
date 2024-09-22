@@ -9,6 +9,10 @@
 
 # Caches
 
+> On-chip storage, keeps a copy of a subset of DRAM data - If an address is stored “in the cache” (cache hit), the CPU can load/store that data more quickly than if the data resides only in DRAM
+
+A cache is a hardware implementation detail that does not impact the output of a program, only it's performance. In fact, caches are transparent to the programmer.
+
 # Compiler Optimizations
 
 # Multi-Threading
