@@ -3,7 +3,7 @@
 # To-do list
 - [x] Lista de Workshops. ✅ 2024-09-19
 - [ ] Encomenda do restante material;
-	- [ ] Organização do lab;
+	- [x] Organização do lab; ✅ 2024-09-22
 	- [ ] O que fazer com as impressoras?
 ***
 # Lista de Workshops

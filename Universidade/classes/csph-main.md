@@ -75,7 +75,7 @@ With this memory improvements we can mask latency and increase the throughput of
 We now have a processor core that supports 2 threads in parallel and 4 concurrently. Both ALU's will always be occupied.
 We can mix and match with [[csph-ILP|ILP]], having the same thread in both of the ALU's - the strategy is to choose independent instruction streams from the 4 threads.
 ## What about a GPU?
-![[Pasted image 20240922164148.png|center]]
-![[Pasted image 20240922164242.png|center]]
+![[gpu_1.png|center]]
+![[gpu_2.png|center]]
 - [ ] #question Where do we arrive on 48 warps?
 ***
