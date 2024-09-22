@@ -7,7 +7,14 @@ Of coarse we need to modify the code in order to support **SIMD**, because this 
 
 It's all fun and games when we run the same operations on all the elements, but what if those operations are conditional? For example if an element is bigger than 100 do nothing on it...
 
-This is where **lane masking** comes into play: we stop
+This is where **lane masking** comes into play: we stop the executions of specific lanes that do not satisfy a condition and the other lanes continue with the execution stream.
+*What does this mean?*
+
+In assembly the code is sequential, when we do not satisfy an *if* we jump over to where the *else* condition is defined. Here we can not change the program counter - we can not branch. Hence if we not not want, for example, to operate on lanes which input is bigger than 100, we stop this lanes and only operate on the others.
+
+## Coherent Execution
+
+> Same instruction sequence 
 
 ***
 # Why not Threads?
