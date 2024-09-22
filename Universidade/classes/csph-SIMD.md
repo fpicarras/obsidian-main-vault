@@ -1,4 +1,5 @@
 ***
+# Basics
 > The main ideia for SIMD - **Single Instruction Multiple Data** - is that most of the time we process data with the same instructions, so we modify the hardware so that with a single instruction stream, we can operate in multiple positions of an array at a time - allowing for effective parallelization of an array processing on a hardware level.
 
 Of coarse we need to modify the code in order to support **SIMD**, because this process requires specific instructions.
@@ -81,4 +82,14 @@ To simplify the programming of code that makes use of SIMD processing, we create
 - **vR = \_vsub(v1, v2)** - Subtracts v1 from v1.
 - **vR = \_vmul(v1, v2)** - multiplies v1 by v2.
 ### Logic Operations
-- **vbR = \_vnot(vBool)** - Inverts the boolean values 
+- **vbR = \_vnot(vBool)** - Inverts the boolean values in vBool.
+- **vbR = \_vand(vb1, vb2)** - And operation.
+- **vbR = \_vor(vb1, vb2)** - Or operation.
+### Control
+- **vBool = \_vge(v1, v2)** - Is v1 greater or equal to v2?
+- **vBool = \_vlt(v1, v2)** - Is v1 less than v2?
+- **vBool = \_veq(v1, v2)** - Is v1 equal to v2?
+
+### Masking
+To fix the *conditional execution* problem we add masks, which are an extra parameter (**__vBool**) that almost all of the operations support that only allows for said operation to be executed on the lanes that are active 1 in the mask.
+For example a mask like: [1 0 0 0 0 0 0 1]
