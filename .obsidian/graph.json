@@ -5,7 +5,7 @@
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
-  "collapse-color-groups": true,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "path:GoldenRift  ",
@@ -33,6 +33,13 @@
       "color": {
         "a": 1,
         "rgb": 6084188
+      }
+    },
+    {
+      "query": "path:Universidade  ",
+      "color": {
+        "a": 1,
+        "rgb": 6072278
       }
     }
   ],

@@ -14,7 +14,10 @@ In assembly the code is sequential, when we do not satisfy an *if* we jump over 
 
 ## Coherent Execution
 
-> Same instruction sequence 
+> Same instruction sequence applies to all elements operated upon simultaneously. Coherent execution is necessary for efficient use of SIMD processing resources.
+
+Coherent execution is not necessary for efficient parallelization across cores, since each core is capable of fetching/decoding different instruction streams.
+*Divergent Execution* is what we call when different lanes are never operating simultaneously.
 
 ***
 # Why not Threads?
