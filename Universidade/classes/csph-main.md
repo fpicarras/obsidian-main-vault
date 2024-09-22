@@ -64,4 +64,4 @@ A computer's memory is organized as an array of bytes, each bytes is identified 
 Memory is a very slow component, a processor as to stall it's execution when it can not run it's next instruction in an instruction stream because of a dependency on a previous instruction.
 There are ways we can mask the memory latency:
 
-- **Caches** - If an address is stored “in the cache” (cache hit), the CPU can load/store that data more quickly than if the data resides only in DRAM.
+- **[[Cache]]** - If an address is stored “in the cache” (cache hit), the CPU can load/store that data more quickly than if the data resides only in DRAM.

@@ -1,7 +1,7 @@
 ***
 > A very big problem with memory (RAM) is the time it takes to access the data, there are three common solutions:
 
-- Caches - which approximate the data from the cores.
+- [[Cache]] - which approximate the data from the cores.
 
 - Compiler optimizations - the compiler attempts to optimize fetch instructions and stores in parts of the code that are not dependant.
 
