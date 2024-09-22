@@ -4,6 +4,10 @@
 For example, an array that has N elements, instead of being processed in Serial, can be split for T threads and have an ideal speed-up of T.
 Another useful example of threads are in user interfaces or network servers, threads can improve responsiveness by allowing background tasks to run without blocking the main thread.
 
+# Concurrency
+
+A big problem with threads is the access to shared resources, meaning: consider two threads that increment the same global variable, this threads will load the variable  
+
 # pthreads
 
 >Or POSIX threads, are the standard milti-threading in C.
@@ -47,5 +51,16 @@ This command is useful because if the main ends before the threads the program w
 Consider the following thread function:
 ```C
 int counter = 0; // Shared resource 
-pthread_mutex_t mutex; // Mutex to protect the shared resource void* increment_counter(void* arg) { for (int i = 0; i < 100000; ++i) { // Lock the mutex before accessing the shared variable pthread_mutex_lock(&mutex); ++counter; // Critical section pthread_mutex_unlock(&mutex); // Unlock the mutex after accessing } return NULL; }
+pthread_mutex_t mutex; // Mutex to protect the shared resource
+
+void* increment_counter(void* arg) { 
+	for (int i = 0; i < 100000; ++i) { 
+		// Lock the mutex before accessing the shared variable
+		thread_mutex_lock(&mutex); 
+		++counter; // Critical section 
+		pthread_mutex_unlock(&mutex); // Unlock the mutex after accessing 
+	} 
+	return NULL; 
+}
 ```
+
