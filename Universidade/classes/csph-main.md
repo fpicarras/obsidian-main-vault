@@ -58,7 +58,7 @@ In summary, ISPC is designed for **high-performance data-parallelism**, whereas 
 ***
 # Memory
 
-> Now that we talked about execution optimizations, let's divulge into the second key concept in computer architectures - [[csph-Memmory|Memory]]!
+> Now that we talked about execution optimizations, let's divulge into the second key concept in computer architectures - [[csph-Memory|Memory]]!
 
 A computer's memory is organized as an array of bytes, each bytes is identified by it's **address** in memory (it's position in this array).
 Memory is a very slow component, a processor as to stall it's execution when it can not run it's next instruction in an instruction stream because of a dependency on a previous instruction.
@@ -70,4 +70,7 @@ There are ways we can mask the memory latency:
 
 With this memory improvements we can mask latency and increase the throughput of our processor, arriving at this state:
 
-![[hyper-thread-CPU.png]]
+![[hyper-thread-CPU.png|center]]
+
+We now have a processor core that supports 2 threads in parallel and 4 concurrently. Both ALU's will always be occupied.
+We can mix and match with [[csph-ILP|ILP]], having the same thread in both of the ALU's - the strategy is to choose independent instruction streams from the 4 threads.
