@@ -41,4 +41,5 @@ This is a dual core processor, able to run 2 threads in parallel and on each cor
 > SPMD - Single Process Multiple Data.
 > [[csph-ISPC|ISPC]] - Intel SPMD Program Compiler.
 
-Since programming S
+Since programming SIMD compatible code is boring. Intel developed a mechanism (and it's respective compiler) that takes advantage of SIMD units to speed-up performance for data-parallel tasks.
+The key concept is to have the same program running on multiple data
