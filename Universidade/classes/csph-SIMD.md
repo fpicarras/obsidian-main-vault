@@ -19,6 +19,14 @@ In assembly the code is sequential, when we do not satisfy an *if* we jump over 
 Coherent execution is not necessary for efficient parallelization across cores, since each core is capable of fetching/decoding different instruction streams.
 *Divergent Execution* is what we call when different lanes are never operating simultaneously.
 
+## Execution... On modern CPU's
+### Instructions
+#SSE - 128-bit: 4x32 bits or 2x64 bits (4-wide vectors)
+#AVX2 - 256-bit: 8x32 bits or 4x64 bits (8-wide vectors)
+#AVX512 - 512-bit: 16x32 bits or 8x64 bits (16-wide vectors)
+### Generation
+
+
 ***
 # Why not Threads?
 
