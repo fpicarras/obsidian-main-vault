@@ -140,3 +140,7 @@ while (i < 5) {
 **Loops `for`**:
 - Em **Python**, o `for` é frequentemente usado para iterar sobre sequências como listas e `range()`, simplificando o processo.
 - Em **C++**, o `for` segue o modelo mais clássico, que requer inicialização, condição e incremento explícito.
+---
+# Funções
+**Python**: As funções são definidas com `def` e podem retornar valores sem a necessidade de especificar o tipo de retorno.
+´´´
