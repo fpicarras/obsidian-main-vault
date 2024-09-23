@@ -49,8 +49,6 @@ O Arduino pode ser alimentado de várias maneiras, o que o torna muito flexível
 
 O Arduino Uno possui pinos dedicados para entradas e saídas digitais e analógicas que permitem interagir com o mundo exterior.
 
----
-
 #### **Alimentação**
 
 - **5V e 3.3V**: Pinos que fornecem alimentação para sensores e outros periféricos.
@@ -79,12 +77,36 @@ O Arduino Uno possui pinos dedicados para entradas e saídas digitais e analógi
 
 ---
 
-## **Programação**
+# Programação
 
 O Arduino é programado utilizando uma linguagem baseada em C/C++, através do IDE Arduino. A programação é feita com dois blocos principais:
 
 ### **Estrutura básica de um programa (Sketch)**
 
 - **setup()**: Função chamada uma vez, no início do programa. Utilizada para inicializar pinos, configurar a comunicação serial e preparar o Arduino para a execução do programa.
-    
-    cpp
+- **loop()**: Função chamada repetidamente após o setup, onde a lógica do programa é implementada. O código dentro de `loop()` será executado de forma contínua.
+
+```Cpp
+void setup() {
+  pinMode(13, OUTPUT);  // Configura o pino 13 como saída
+  Serial.begin(9600);   // Inicia a comunicação serial
+}
+
+void loop() {
+  digitalWrite(13, HIGH);  // Liga o LED no pino 13
+  delay(1000);             // Espera 1 segundo
+  digitalWrite(13, LOW);   // Desliga o LED no pino 13
+  delay(1000);             // Espera 1 segundo
+}
+```
+
+### **Funções Comuns**
+
+- **digitalWrite(pino, valor)**: Define o estado de um pino digital (HIGH ou LOW).
+- **digitalRead(pino)**: Lê o estado de um pino digital (HIGH ou LOW).
+- **analogWrite(pino, valor)**: Escreve um valor PWM em um pino digital (0-255).
+- **analogRead(pino)**: Lê um valor analógico de um pino analógico (0-1023).
+
+### **Bibliotecas**
+
+O Arduino possui uma vasta gama de bibliotecas que facilitam a programação de sensores e módulos específicos. Exemplo: **Servo.h** para controlar motores servo ou **Wire.h** para comunicação I2C.
