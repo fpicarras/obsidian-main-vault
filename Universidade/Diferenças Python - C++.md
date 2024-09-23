@@ -111,3 +111,32 @@ for (int i = 0; i < 5; i++) {
     Serial.println(i);  // Imprime de 0 a 4
 }
 ```
+
+#### **3. Loops `while`**
+
+- **Python**: O loop `while` executa enquanto a condição é verdadeira. Como no `if`, a indentação delimita o bloco de código.
+```python
+i = 0
+while i < 5:
+    print(i)
+    i += 1  # Incrementa i
+```
+
+- **C++ (Arduino)**: A sintaxe do `while` em C++ é similar à do Python, mas com o uso de chaves `{}` para delimitar o bloco de código.
+```Cpp
+int i = 0;
+while (i < 5) {
+    Serial.println(i);
+    i++;  // Incrementa i
+}
+```
+
+## Principais Diferenças
+
+**Sintaxe e Delimitação de Blocos**:
+- **Python**: Usa **indentação** para definir blocos de código. Isso torna o código visualmente mais limpo, mas também significa que a indentação incorreta pode causar erros.
+- **C++**: Usa **chaves `{}`** para delimitar blocos de código, o que é mais explícito, mas também requer atenção para garantir que as chaves estejam corretamente alinhadas.
+
+**Loops `for`**:
+- Em **Python**, o `for` é frequentemente usado para iterar sobre sequências como listas e `range()`, simplificando o processo.
+- Em **C++**, o `for` segue o modelo mais clássico, que requer inicialização, condição e incremento explícito.
