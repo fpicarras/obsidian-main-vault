@@ -79,6 +79,8 @@ O Arduino Uno possui pinos dedicados para entradas e saídas digitais e analógi
 
 # Programação
 
+> Antes de tudo, abordar [[Diferenças Python - C++]].
+
 O Arduino é programado utilizando uma linguagem baseada em C/C++, através do IDE Arduino. A programação é feita com dois blocos principais:
 
 ### **Estrutura básica de um programa (Sketch)**
