@@ -143,4 +143,37 @@ while (i < 5) {
 ---
 # Funções
 **Python**: As funções são definidas com `def` e podem retornar valores sem a necessidade de especificar o tipo de retorno.
-´´´
+```python
+def soma(a, b):
+    return a + b
+```
+
+**C++**: O tipo de retorno da função deve ser declarado explicitamente. As funções também podem ser void (sem retorno).
+```Cpp
+int soma(int a, int b) {
+    return a + b;
+}
+```
+---
+# Exemplo
+
+```python
+valor = int(input("Digite um valor: "))
+print("Você digitou:", valor)
+```
+
+```Cpp
+int valor;
+
+void setup() {
+  Serial.begin(9600);  // Inicia a comunicação serial
+}
+
+void loop() {
+  if (Serial.available() > 0) {
+    valor = Serial.parseInt();  // Lê um valor inteiro
+    Serial.print("Você digitou: ");
+    Serial.println(valor);
+  }
+}
+```
