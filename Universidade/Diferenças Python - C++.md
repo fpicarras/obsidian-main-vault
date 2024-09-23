@@ -63,3 +63,51 @@ for (int i = 0; i < vetor.size(); i++) {
     Serial.println(vetor[i]);
 }
 ```
+---
+# Estruturas de Controlo
+
+#### **1. `if`, `elif`, `else` (Estruturas Condicionais)**
+
+- **Python**: Em Python, blocos de código são delimitados por **indentação** e não são necessárias chaves `{}`. O Python utiliza `elif` no lugar de `else if`.
+```python
+x = 10
+if x > 10:
+    print("x é maior que 10")
+elif x == 10:
+    print("x é igual a 10")
+else:
+    print("x é menor que 10")
+```
+
+- **C++ (Arduino)**: Em C++, usamos chaves `{}` para definir os blocos de código. Além disso, usamos `else if` em vez de `elif`.
+```Cpp
+int x = 10;
+if (x > 10) {
+    Serial.println("x é maior que 10");
+} else if (x == 10) {
+    Serial.println("x é igual a 10");
+} else {
+    Serial.println("x é menor que 10");
+}
+```
+
+#### **2. Loops `for`**
+
+- **Python**: O `for` em Python é usado principalmente para iterar sobre sequências, como listas ou ranges.
+**Exemplo com `range`:**
+```python
+for i in range(5):  # Itera de 0 a 4
+	print(i)
+```
+**Exemplo com uma lista:**
+```python
+lista = [1, 2, 3, 4, 5]
+for item in lista:
+    print(item)```
+
+- **C++ (Arduino)**: O `for` em C++ é mais semelhante ao de outras linguagens de programação, onde você define o início, a condição de parada, e o incremento.
+```Cpp
+for (int i = 0; i < 5; i++) {
+    Serial.println(i);  // Imprime de 0 a 4
+}
+```
