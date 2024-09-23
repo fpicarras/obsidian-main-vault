@@ -1,7 +1,7 @@
 ***
 # Porque um Arduino
 
-O Arduino é amplamente utilizado na prototipagem e desenvolvimento de dispositivos eletrónicos pela sua simplicidade, flexibilidade e acessibilidade. Para alunos de engenharia biomédica, ele oferece um meio rápido e eficiente de testar e desenvolver soluções tecnológicas na área da saúde. O Arduino permite controlar uma grande variedade de sensores e dispositivos de maneira integrada, sendo ideal para projetos que envolvem monitorização de sinais vitais, reabilitação, próteses e instrumentação médica.
+O Arduino é amplamente utilizado na prototipagem e desenvolvimento de dispositivos eletrônicos pela sua simplicidade, flexibilidade e acessibilidade. Para alunos de engenharia biomédica, ele oferece um meio rápido e eficiente de testar e desenvolver soluções tecnológicas na área da saúde. O Arduino permite controlar uma grande variedade de sensores e dispositivos de maneira integrada, sendo ideal para projetos que envolvem monitorização de sinais vitais, reabilitação, próteses e instrumentação médica.
 
 ## Vantagens para a Engenharia Biomédica:
 
@@ -14,11 +14,7 @@ O Arduino é amplamente utilizado na prototipagem e desenvolvimento de dispositi
 
 ## **Exemplos práticos**
 
-- **Monitorização de Sinais Vitais**: Projetos que utilizam sensores de frequência cardíaca, temperatura corporal e oxímetros de pulso para criar sistemas de monitoramento de pacientes.
-- **Próteses Ativas**: Controle de servomotores para simular o funcionamento de membros protéticos baseados em comandos provenientes de sensores musculares (EMG).
-- **Sistemas de Reabilitação**: Dispositivos que auxiliam em terapias físicas, monitorizando e ajustando o movimento através de sensores de posição e força.
-- **Desfibrilador Simulado**: Simulações em laboratório de protótipos de desfibriladores para prática e pesquisa, usando Arduino para controlar e monitorar as correntes e pulsos.
-- **Dispositivos de Medição para Pesquisa**: Utilização de sensores para coletar dados experimentais, como análise de stress físico através de sensores de pressão.
+- Inserir exemplos para biomédica.
 
 ---
 # Introdução ao dispositivo

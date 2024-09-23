@@ -177,3 +177,5 @@ void loop() {
   }
 }
 ```
+
+> Talvez fosse boa ideia fazer um exmplo que englobasse tudo.
