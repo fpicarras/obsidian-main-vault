@@ -14,4 +14,9 @@ Um grande leque de projetos da HackerSchool necessita de um suporte informático
 Deste modo vimos solicitar financiamento para comprar um equipamento novo.
 ## Computador de Laboratório
 
-Múltiplos projetos envolvem modelação 3D e renderização gráfica. Estes processos careciam 
+Múltiplos projetos envolvem modelação 3D e renderização gráfica. Estes trabalhos careciam de um computador capaz. O laboratório não tem um computador capaz da concessão de projetos mais complexos, sendo o atual apenas capaz de lidar com pequenos trabalhos de programação.
+
+Para tal, pedia-se financiamento para construir um computador desenhado à nossa medida, para isso são pedidos **500 €** com disponibilidade de receber até **300 €**.
+## Impressora 3D
+
+Auto-explicativa, a ideia era arranjar uma impressora que cumprisse os requisitos para 
