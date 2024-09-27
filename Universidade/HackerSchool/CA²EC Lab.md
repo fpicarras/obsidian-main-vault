@@ -44,4 +44,4 @@ Estes bens incluem:
 
 # Total Pedido
 
-Total pedido de **1100 €**, dispostos a receber até **750 **
+Total pedido de **1100 €**, dispostos a receber até **750 €**.
