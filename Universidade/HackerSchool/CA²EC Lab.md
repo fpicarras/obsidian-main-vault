@@ -8,4 +8,4 @@ Neste momento o lab é sediado no Pavilhão de Eletricidade, 4º piso, tendo o e
 
 Contamos bastante material eletrônico que se foi acumulando com os workshops e projetos ao longo dos anos mas estamos à procura de adquirir melhores instrumentos para, por sua vez, lever à concessão de melhores e mais completos projetos.
 
----
+## 
