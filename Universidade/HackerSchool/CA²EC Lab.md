@@ -17,6 +17,9 @@ Contamos bastante material eletrônico que se foi acumulando com os workshops e 
 
 Um grande leque de projetos da HackerSchool necessita de um suporte informático para manter armazenado os seus dados e serviços. Daí a necessidade de um servidor. A HackerSchool tinha um servidor hospedado no campus do Taguspark, contudo, com os anos o equipamento deteriorou-se ao ponto de não haver reparação.
 Deste modo vimos solicitar financiamento para comprar um equipamento novo.
+
+> Preciso de opinião nisto - Tipo todos os servidores que encontrei, e que passam fatura, são quase *1000 €*, no OLX há imensos servidores a ótimo preço, tipo *600 €* que têm as mesmas características dos novos.
+> Ponto 2, de certo modo, pode-se colocar o PC do lab a fazer de servidor. Se utilizarmos um túnel de cloudflare acredito que se consiga aceder -> tem que se testar. 
 ## Computador de Laboratório
 
 Múltiplos projetos envolvem modelação 3D e renderização gráfica. Estes trabalhos careciam de um computador capaz. O laboratório não tem um computador capaz da concessão de projetos mais complexos, sendo o atual apenas capaz de lidar com pequenos trabalhos de programação.
@@ -41,4 +44,4 @@ Estes bens incluem:
 
 # Total Pedido
 
-Total pedido de 
+Total pedido de **1100 €**, dispostos a receber até **750 **
