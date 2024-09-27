@@ -19,4 +19,12 @@ Múltiplos projetos envolvem modelação 3D e renderização gráfica. Estes tra
 Para tal, pedia-se financiamento para construir um computador desenhado à nossa medida, para isso são pedidos **500 €** com disponibilidade de receber até **300 €**.
 ## Impressora 3D
 
-Auto-explicativa, a ideia era arranjar uma impressora que cumprisse os requisitos para 
+Auto-explicativa, a ideia era arranjar uma impressora que fosse de todos os membros da HackerSchool utilizarem para os seus projetos. Sendo que neste momento o serviço tem de ficar a cargo de terceiros.
+Pediam-se **250 €** pelo equipamento, dispondo-nos a receber penas **200 €**.
+
+## Common Supplies
+
+Pot ultimo são precisos alguns bens para manter o lab em funcionamento, para tal, pedíamos **200 €**.
+Estes bens incluem:
+- Rolos de filamento para a impressora 3D;
+- Pontas de sub
