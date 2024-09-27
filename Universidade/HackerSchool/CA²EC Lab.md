@@ -38,3 +38,7 @@ Estes bens incluem:
 - Proteções para as bancadas de trabalho;
 - Material de escritório;
 - Cabos e adaptadores;
+
+# Total Pedido
+
+Total pedido de 
