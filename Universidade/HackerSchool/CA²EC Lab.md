@@ -12,3 +12,6 @@ Contamos bastante material eletrônico que se foi acumulando com os workshops e 
 
 Um grande leque de projetos da HackerSchool necessita de um suporte informático para manter armazenado os seus dados e serviços. Daí a necessidade de um servidor. A HackerSchool tinha um servidor hospedado no campus do Taguspark, contudo, com os anos o equipamento deteriorou-se ao ponto de não haver reparação.
 Deste modo vimos solicitar financiamento para comprar um equipamento novo.
+## Computador de Laboratório
+
+Múltiplos projetos envolvem modelação 3D e renderização gráfica. Estes processos careciam 
