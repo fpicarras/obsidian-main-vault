@@ -4,6 +4,8 @@
 O Laboratório da HackerSchool é um espaço de trabalho e convívio onde todos os membros têm a possibilidade de trabalhar nas suas ideias e projetos.
 A ideia do espaço é ser um "Makerspace" - espaço com equipamento e ferramentas para todo o tipo de trabalhos, disponibilizado de forma livre - que conte com um leque de ferramentas, instrumentos, maquinaria e materiais para todo o tipo de trabalhos que se esperaria ser realizados por alunos de Engenharia.
 
+O laboratório consiste num espaço de *14m²* com armários de 3 bancadas de trabalho, estando cada uma de
+
 Neste momento o lab é sediado no Pavilhão de Eletricidade, 4º piso, tendo o espaço sido fornecido pelo Departamento de Sistemas de Computação do DEEC no verão de 2024.
 
 Contamos bastante material eletrônico que se foi acumulando com os workshops e projetos ao longo dos anos mas estamos à procura de adquirir melhores instrumentos para, por sua vez, lever à concessão de melhores e mais completos projetos.
@@ -27,4 +29,9 @@ Pediam-se **250 €** pelo equipamento, dispondo-nos a receber penas **200 €**
 Pot ultimo são precisos alguns bens para manter o lab em funcionamento, para tal, pedíamos **200 €**.
 Estes bens incluem:
 - Rolos de filamento para a impressora 3D;
-- Pontas de sub
+- Pontas de substituição para os ferros de Solda;
+- Material de solda novo (pasta térmica, estanho, pinças, etc.);
+- Material para o quadro branco (canetas e apagador);
+- Proteções para as bancadas de trabalho;
+- Material de escritório;
+- Cabos e adaptadores;
