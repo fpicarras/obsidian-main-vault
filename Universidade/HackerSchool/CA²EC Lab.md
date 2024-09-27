@@ -7,7 +7,7 @@ A ideia do espaço é ser um "Makerspace" - espaço com equipamento e ferramenta
 O laboratório consiste num espaço de *14m²* com armários de 3 mesas/bancadas de trabalho, estando cada uma destas bancadas associada a um tipo de trabalho diferente. 
 	*Bancada de eletrônica*: Contem o material de solda e equipamentos para a concessão e reparação de sistemas.
 	*Bancada de Maquinaria*: Contem o material para trabalhos físicos como corte, perfuração, polir materiais, etc. Conta com uma gama de ferramentas desde pequenas chaves de precisão até berbequins.
-	*Bancada de Computador*: Esta é só uma mesa de trabalho, onde os membros podem levar o seu computador e trabalhar, contando com monitores e fichas. Esperamos conseguir meter aqui uma workstation para o próprio laboratório ter um comput 
+	*Bancada de Computador*: Esta é só uma mesa de trabalho, onde os membros podem levar o seu computador e trabalhar, contando com monitores e fichas. Esperamos conseguir meter aqui uma workstation para o próprio laboratório ter um computador fixo. 
 
 Neste momento o lab é sediado no Pavilhão de Eletricidade, 4º piso, tendo o espaço sido fornecido pelo Departamento de Sistemas de Computação do DEEC no verão de 2024.
 
@@ -25,7 +25,7 @@ Para tal, pedia-se financiamento para construir um computador desenhado à nossa
 ## Impressora 3D
 
 Auto-explicativa, a ideia era arranjar uma impressora que fosse de todos os membros da HackerSchool utilizarem para os seus projetos. Sendo que neste momento o serviço tem de ficar a cargo de terceiros.
-Pediam-se **250 €** pelo equipamento, dispondo-nos a receber penas **200 €**.
+Pediam-se **400 €** pelo equipamento, dispondo-nos a receber penas **250 €**.
 
 ## Common Supplies
 
