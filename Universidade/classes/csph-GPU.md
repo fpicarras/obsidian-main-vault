@@ -152,9 +152,16 @@ float* A = new float[N]; // allocate buffer in host memory
 int bytes = sizeof(float)*N;
 float *deviceA;
 cudaMalloc(&deviceA, bytes);
-cudaMemcpy
+cudaMemcpy(deviceA, A, bytes, cudaMemcpyHostToDevice);
 
+// note: directly accessing deviceA[i] is an invalid
+// operation here: cannot manipulate contents of deviceA
+// directly from host (only from device code), since deviceA
+// is not a pointer into the host’s memory address space
 ```
+> There is a problem here, all the threads from all the blocks are accessing 
+### 1D Convolution
+
 ***
 
 # CUDA and GPU Architectures Working Together
