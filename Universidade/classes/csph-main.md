@@ -96,4 +96,7 @@ $$
 F_a = \min(F_p, B_{L1}\times AI)
 $$
 
-*$F_a$* is the attainable performance of an architecture \[GFlops/s\]; 
+*$F_a$* is the attainable performance of an architecture \[GFlops/s\]; $F_p$ is the peak compute performance (max ALU throughput); $B_{L1}$ is the L1 cache bandwidth (could be any memory level);
+$AI$ is the *arithmetic intensity*, which is how many flops we so for each byte we communicate with the memory:
+$$AI=\frac{Flops_{program}}{Bytes_{program}}$$
+![[Pasted image 20240928121819.png|center]]
