@@ -77,7 +77,7 @@ We can mix and match with [[csph-ILP|ILP]], having the same thread in both of th
 ## What about a GPU?
 ![[gpu_1.png|center]]
 ![[gpu_2.png|center]]
-- [ ] #question Where do we arrive on 48 warps?
+- [x] #question Where do we arrive on 48 warps? ✅ 2024-09-28
 ***
 # Dissecting the Intel i7 11770
 
@@ -113,4 +113,5 @@ For the #AVX2 we would have the same performance as the #AVX512 : the vector len
 
 > How can we make code that successfully uses the most out of our computing units? Following this abstraction models for parallelism:
 
+- [[csph-Shared Address Space|Shared Address Space]]
 - 
