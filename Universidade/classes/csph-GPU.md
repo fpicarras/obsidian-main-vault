@@ -91,9 +91,22 @@ This distinction between **host memory** and **device memory** is crucial for ef
 ## Examples
 ### Matrix Multiplication
 Consider a program that multiplies each element of $A$ to it's corresponding in $B$ and stores it in $C$.
-Let's say that that matrix is $6\times12$. First we need to create an application thread running on the *host* 
+Let's say that that matrix is $6\times12$. First we need to create an application thread running on the *host* the configures the *device*, saying how many blocks we want and how many threads per block.
+```Cpp
+const int Nx = 12;
+const int Ny = 6;
 
----
+dim3 threadsPerBlock(4, 3, 1); 
+dim3 numBlocks( Nx/threadsPerBlock.x, Ny/threadsPerBlock.y, 1); 
+// assume A, B, C are allocated Nx x Ny float arrays 
+// this call will launch 72 CUDA threads: 
+// 6 thread blocks of 12 threads each 
+matrixAdd<<numBlocks, threadsPerBlock>>(A,B,C);
+```
+What this will do is map the matrixes to the grid we want to create, resulting in the following disposition:
+![[Pasted image 20240928200104.png|center]]
+Finally `matrixAdd<<numBlocks, threadsPerBlock>>(A,B,C);` bulk launches many CUDA threads, this call returns when all threads have finished. 
+***
 
 # CUDA and GPU Architectures Working Together
 
