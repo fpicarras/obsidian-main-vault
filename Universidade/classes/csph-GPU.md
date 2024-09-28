@@ -159,7 +159,7 @@ cudaMemcpy(deviceA, A, bytes, cudaMemcpyHostToDevice);
 // directly from host (only from device code), since deviceA
 // is not a pointer into the host’s memory address space
 ```
-> There is a problem here, all the threads from all the blocks are accessing 
+> There is a problem here, all the threads from all the blocks are accessing the global memory
 ### 1D Convolution
 
 ***
