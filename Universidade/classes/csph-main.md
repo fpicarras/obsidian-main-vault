@@ -79,3 +79,10 @@ We can mix and match with [[csph-ILP|ILP]], having the same thread in both of th
 ![[gpu_2.png|center]]
 - [ ] #question Where do we arrive on 48 warps?
 ***
+# Dissecting the Intel i7 11770
+
+> Where do we arrive on the architecture level after all this improvements done to our processor?
+
+![[dissected_i7.png|center]]
+
+ As we can see, we now have multiple ports for ALU and memory operations, this ports are adapted to support multiple 
