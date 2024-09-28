@@ -85,4 +85,7 @@ We can mix and match with [[csph-ILP|ILP]], having the same thread in both of th
 
 ![[dissected_i7.png|center]]
 
- As we can see, we now have multiple ports for ALU and memory operations, this ports are adapted to support multiple 
+ As we can see, we now have multiple ports for ALU and memory operations, this ports are adapted to support multiple data formats, allowing for SSE (foe example) to have multiple ALU and memory operations in the same clock cycle ([[csph-ILP|ILP]]).
+ Let's expand this to 8 cores:
+ ![[Pasted image 20240928120731.png|center]]
+ With an i7 11770, on paper, we would be able to execute **614,4 GFlops/s** and have an L1 
