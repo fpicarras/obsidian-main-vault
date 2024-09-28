@@ -116,7 +116,7 @@ __global__ void matrixAdd(float A[Ny][Nx], float B[Ny][Nx], float C[Ny][Nx]) {
 	C[j][i] = A[j][i] + B[j][i]; 
 }
 ```
-As you can see, each thread needs to identify it's corresponding matrix coordinates. Since we mapped the grid to equal the matrix, we just need to use the thread/block information to be able to map: each block as an id (`blockIdx` - 2D), a size (`blockDim` - 2D) and each thread an  
+As you can see, each thread needs to identify it's corresponding matrix coordinates. Since we mapped the grid to equal the matrix, we just need to use the thread/block information to be able to map: each block as an id (`blockIdx` - 2D), a size (`blockDim` - 2D) and each thread an id (`threadIdx` - 2D). So to get the matrix index (on each dimension) we have to jump `blockIdx` blocks of size `blockDim` and then, inside the target block, get to the target thread, by skipping `threadIdx`. 
 
 ***
 
