@@ -164,7 +164,21 @@ cudaMemcpy(deviceA, A, bytes, cudaMemcpyHostToDevice);
 ![[Pasted image 20240928210846.png|center]]
 To avoid the use of global memory, let's make them all use the shared memory, of course, we would still need to load the values from the host to the global memory and then to the shared. 
 ```Cpp
+#define THREADS_PER_BLK 128 
+__global__ void convolve(int N, float* input, float* output) { 
+	__shared__ float support[THREADS_PER_BLK+2]; // per-block allocation 
+	int index = blockIdx.x * blockDim.x + threadIdx.x; // thread local variable
+	support[threadIdx.x] = input[index]; 
+	if (threadIdx.x < 2) 
+		support[THREADS_PER_BLK + threadIdx.x] = input[index+THREADS_PER_BLK];
+	__syncthreads(); 
+	
+	float result = 0.0f; // thread local variable 
+	for (int i=0; i<3; i++) result += support[threadIdx.x + i]; 
+	output[index] = result / 3.f; 
+}
 ```
+> `__syncthreads()` will wait for all the threads **in the same block** to finish.
 ***
 
 # CUDA and GPU Architectures Working Together
