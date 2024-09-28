@@ -119,6 +119,7 @@ __global__ void matrixAdd(float A[Ny][Nx], float B[Ny][Nx], float C[Ny][Nx]) {
 As you can see, each thread needs to identify it's corresponding matrix coordinates. Since we mapped the grid to equal the matrix, we just need to use the thread/block information to be able to map: each block as an id (`blockIdx` - 2D), a size (`blockDim` - 2D) and each thread an id (`threadIdx` - 2D). So to get the matrix index (on each dimension) we have to jump `blockIdx` blocks of size `blockDim` and then, inside the target block, get to the target thread, by skipping `threadIdx`. 
 What if the matrix size if not a multiple of `threadsPerBlock`?
 ```Cpp
+/* Host */
 const int Nx = 11; // not a multiple of threadsPerBlock.x
 const int Ny = 5;  // not a multiple of threadsPerBlock.y
 
@@ -129,6 +130,18 @@ dim3 numBlocks( Nx/threadsPerBlock.x, Ny/threadsPerBlock.y, 1);
 // 6 thread blocks of 12 threads each 
 matrixAdd<<numBlocks, threadsPerBlock>>(A,B,C);
 ```
+
+```Cpp
+/* kernel definition (runs on GPU) */
+__global__ void matrixAdd(float A[Ny][Nx], float B[Ny][Nx], float C[Ny][Nx]) {
+	int i = blockIdx.x * blockDim.x + threadIdx.x;
+	int j = blockIdx.y * blockDim.y + threadIdx.y;
+	// guard against out of bounds array access 
+	if (i < Nx && j < Ny)
+		C[j][i] = A[j][i] + B[j][i]; 
+}
+```
+I
 ***
 
 # CUDA and GPU Architectures Working Together
