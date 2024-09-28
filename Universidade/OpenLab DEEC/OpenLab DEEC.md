@@ -4,7 +4,7 @@
 - [x] Lista de Workshops. ✅ 2024-09-19
 - [ ] Encomenda do restante material;
 	- [x] Organização do lab; ✅ 2024-09-22
-	- [ ] O que fazer com as impressoras?
+	- [x] O que fazer com as impressoras? ✅ 2024-09-28
 ***
 # Lista de Workshops
 ## Eletrónica
