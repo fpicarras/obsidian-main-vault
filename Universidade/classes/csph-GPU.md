@@ -105,7 +105,19 @@ matrixAdd<<numBlocks, threadsPerBlock>>(A,B,C);
 ```
 What this will do is map the matrixes to the grid we want to create, resulting in the following disposition:
 ![[Pasted image 20240928200104.png|center]]
-Finally `matrixAdd<<numBlocks, threadsPerBlock>>(A,B,C);` bulk launches many CUDA threads, this call returns when all threads have finished. 
+Finally `matrixAdd<<numBlocks, threadsPerBlock>>(A,B,C);` bulk launches many CUDA threads, this call returns when all threads have finished.
+Now, we need to create the *kernel*:
+```Cpp
+// kernel definition (runs on GPU) 
+__global__ void matrixAdd(float A[Ny][Nx], float B[Ny][Nx], float C[Ny][Nx]) {
+	int i = blockIdx.x * blockDim.x + threadIdx.x;
+	int j = blockIdx.y * blockDim.y + threadIdx.y;
+
+	C[j][i] = A[j][i] + B[j][i]; 
+}
+```
+As you can see, each thread needs to identify it's corresponding matrix coordinates. Since we mapped the grid to equal the matrix, we just need to use the thread/block information to be able to map: each block as an id (`blockIdx` - 2D), a size (`blockDim` - 2D) and each thread an  
+
 ***
 
 # CUDA and GPU Architectures Working Together
