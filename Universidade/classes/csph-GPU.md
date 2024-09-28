@@ -159,9 +159,10 @@ cudaMemcpy(deviceA, A, bytes, cudaMemcpyHostToDevice);
 // directly from host (only from device code), since deviceA
 // is not a pointer into the host’s memory address space
 ```
-> There is a problem here, all the threads from all the blocks are accessing the global memory
+> There is a problem here, all the threads from all the blocks are accessing the global memory which is very slow.
 ### 1D Convolution
-
+![[Pasted image 20240928210846.png|center]]
+To avoid the use of global memory, let's make them all use the shared memory, of course, we would still need to load the values from the host to the global memory and then to the  
 ***
 
 # CUDA and GPU Architectures Working Together
