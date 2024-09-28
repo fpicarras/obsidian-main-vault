@@ -183,13 +183,22 @@ __global__ void convolve(int N, float* input, float* output) {
 
 # CUDA and GPU Architectures Working Together
 
+![[Pasted image 20240928212751.png|center]]
+
 GPUs are designed to handle tasks that are highly parallel, where the same operation is applied to many data elements. CUDA allows programmers to tap into the massive parallelism available in GPUs by launching thousands of threads for simple, repetitive tasks. These threads execute in **warps**, and their execution is tightly coupled with the underlying hardware for maximum efficiency.
 
 The **hierarchical thread model** of CUDA (threads, blocks, grids) is mapped directly to the **streaming multiprocessors (SMs)** of NVIDIA GPUs. Each SM can handle multiple warps of threads concurrently, taking advantage of the high parallelism of the hardware.
 
-For example, the **NVIDIA RTX 4070 Ti** has 60 **SM cores**, each capable of executing **up to 48 warps**, meaning thousands of threads can run simultaneously on a single GPU chip【17†source】【17†source】.
+For example, the **NVIDIA RTX 4070 Ti** has 60 **SM cores**, each capable of executing **up to 48 warps**, meaning thousands of threads can run simultaneously on a single GPU chip.
+## What's a Warp
 
----
+A *Warp* is a CUDA implementation detail on NVIDIA GPU's. On modern n NVIDIA hardware, groups of 32 CUDA threads in a thread block are executed simultaneously using 32-wide SIMD execution.
+- These 32 logical CUDA threads share an instruction stream and therefore performance can suffer due to divergent execution;
+- This mapping is similar to how ISPC runs program instances in a gang;
+- In a thread block, threads 0-31 fall into the same warp (so do threads 32-63, etc.) 
+	- Therefore, a thread block with 256 CUDA threads is mapped to 8 warps 
+ Each “SM” core in the GTX 1080 is capable of scheduling and interleaving execution of up to 64 warps • So, a “SM” core is capable of concurrently executing multiple CUDA thread blocks
+***
 # Applications of GPUs and CUDA
 
 GPUs, especially when programmed using CUDA, are used in a wide range of fields:
