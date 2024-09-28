@@ -16,3 +16,36 @@ In this way, communication between threads is implicit, as data exchange happens
 ***
 # Synchronization
 
+Because multiple threads access the same memory locations, **synchronization** is crucial to avoid issues like race conditions. Without proper synchronization, multiple threads may simultaneously read and write to the same memory, leading to inconsistent data. The presentation outlines the following mechanisms to manage synchronization:
+## **Locks**
+Locks are used to enforce **mutual exclusion**, meaning only one thread can access a critical section of code or data at a time.
+
+- **Example**: In the following pseudocode, a lock ensures that only one thread at a time increments the shared variable `x`.
+```C
+lock(my_lock); 
+x++; 
+unlock(my_lock);
+```
+Locks are simple and effective but can lead to performance bottlenecks if not used carefully, especially when multiple threads contend for the same lock, causing **lock contention**.
+## Barriers
+Barriers are synchronization points where all threads must reach before any can proceed. This is useful when threads need to complete certain phases of computation before moving on to the next step.
+- **Example**: A barrier might be used to ensure that all threads have completed their tasks before continuing to the next phase:
+```C
+barrier(my_barrier, NUM_THREADS);
+```
+Barriers are a conservative mechanism to ensure all threads are synchronized, but excessive use can lead to inefficiencies if some threads finish their work much earlier than others, causing them to wait.
+## Atomic Operations
+In some cases, atomic operations can be used to ensure a specific operation on a shared variable is completed without interruption. These operations are typically supported by hardware and are faster than locks.
+- **Example**: `atomicAdd(x, 1);` will atomically increment `x` without the need for explicit locking.
+Atomic operations are essential for certain fine-grained synchronization tasks, such as counting or updating shared counters.
+***
+# Hardware Implementation
+
+The hardware must support efficient memory sharing for the shared address space model to work. The presentation describes **key hardware features**:
+
+- **Caches**: Each processor has its own local cache, which holds frequently accessed memory locations. Cache coherence protocols ensure that if one processor modifies a cached memory location, other processors' caches are updated.
+    
+- **Memory Interconnect**: The processors communicate via an interconnect to access shared memory. This can be implemented using a **bus**, **crossbar switch**, or **multi-stage network**.
+    
+- **NUMA (Non-Uniform Memory Access)**: In large systems, memory access times can vary depending on the physical location of the memory relative to the processor. This can lead to **NUMA effects**, where some memory accesses are slower because the memory is further from the processor.
+***
