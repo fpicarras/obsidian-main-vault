@@ -103,3 +103,6 @@ $$AI=\frac{Flops_{program}}{Bytes_{program}}$$
 Now with all the memory hierarchy…
 ![[roofline_full.png|center]]
 ### SIMD operations
+Depending on the type of SIMD vector we are using, the peak performance bound will change (considering we are processing less bytes per clock cycle).
+
+For example, if we use #FMA (Fused Add and Multiplication - makes the two operations at the same time) instead of ADD/MUL we would have *double* the processed Flops in the same clock cycle, therefore, increasing the peak performance bound by two times.
