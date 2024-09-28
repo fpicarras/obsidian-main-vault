@@ -114,5 +114,5 @@ For the #AVX2 we would have the same performance as the #AVX512 : the vector len
 > How can we make code that successfully uses the most out of our computing units? Following this abstraction models for parallelism:
 
 - [[csph-Shared Address Space|Shared Address Space]] - Threads communicate by reading and writing to shared memory locations. This is a straightforward extension of sequential programming but requires careful management of synchronization (locks, barriers).
-- [[csph-Message Passing|Message Passing]] - 
+- [[csph-Message Passing|Message Passing]] - Threads operate in their own private memory space and communicate by sending and receiving messages. This model is commonly used in clusters and supercomputers.
 - [[csph-SIMD|Data Parallel]] - Computations are expressed as operations on large collections of data, such as applying the same function to elements in an array. It is rigid but allows for significant parallelism in simple tasks like element-wise array operations.
