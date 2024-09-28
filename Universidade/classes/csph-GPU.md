@@ -51,7 +51,7 @@ CUDA (**Compute Unified Device Architecture**) is a parallel computing platform 
   - A **block** is a group of threads that can share data using **shared memory**.
   - A **grid** contains multiple blocks that execute the same kernel【17†source】.
 
-- **Thread Scheduling**: Threads are scheduled in **warps**, where 32 threads execute the same instruction at a time. GPUs are efficient in executing multiple warps simultaneously, allowing for **massive parallelism**【17†source】【17†source】.
+- **Thread Scheduling**: Threads are scheduled in **warps**, where 32 threads execute the same instruction at a time. GPUs are efficient in executing multiple warps simultaneously, allowing for **massive parallelism**.
 ## CUDA Memory Model
 
 CUDA has a hierarchical memory structure designed to optimize access times and parallelism:
@@ -88,6 +88,10 @@ The **CUDA execution model** follows the **Single Program, Multiple Data (SPMD)*
   ```
 
 This distinction between **host memory** and **device memory** is crucial for efficient data management in CUDA programs.
+## Examples
+### Matrix Multiplication
+Consider a program that multiplies each element of $A$ to it's corresponding in $B$ and stores it in $C$.
+Let's say that that matrix is $6\times12$. First we need to create an application thread running on the *host* 
 
 ---
 
