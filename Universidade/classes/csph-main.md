@@ -109,4 +109,8 @@ For example, if we use #FMA (Fused Add and Multiplication - makes the two operat
 
 For the #AVX2 we would have the same performance as the #AVX512 : the vector length is halved but there is another port. The #SSE operations would have half the peak performance and the *Scalar* half of that.
 ***
-# Parallel Programing Models
+# Parallel Programming Models
+
+> How can we make code that successfully uses the most out of our computing units? Following this abstraction models for parallelism:
+
+- 
