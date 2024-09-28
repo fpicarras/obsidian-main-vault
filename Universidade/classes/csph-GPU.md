@@ -79,7 +79,7 @@ The **CUDA execution model** follows the **Single Program, Multiple Data (SPMD)*
 
 2. **Thread Execution**: Each thread calculates its unique index within the grid using the built-in variables `threadIdx`, `blockIdx`, `blockDim`, etc. Threads can operate independently or cooperatively by using **synchronization primitives** like `__syncthreads()`.
 
-3. **Synchronization and Atomic Operations**: Threads in the same block can synchronize using `__syncthreads()`, ensuring that all threads in the block have completed their tasks before proceeding to the next step. CUDA also supports **atomic operations** to ensure safe updates to shared or global memory by multiple threads【17†source】.
+3. **Synchronization and Atomic Operations**: Threads in the same block can synchronize using `__syncthreads()`, ensuring that all threads in the block have completed their tasks before proceeding to the next step. CUDA also supports **atomic operations** to ensure safe updates to shared or global memory by multiple threads.
 
 4. **Memory Transfers**: Data is transferred between the host and device using `cudaMemcpy()`. Since the host and device have separate memory spaces, explicit copying is required:
   
