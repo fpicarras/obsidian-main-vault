@@ -197,7 +197,8 @@ A *Warp* is a CUDA implementation detail on NVIDIA GPU's. On modern n NVIDIA har
 - This mapping is similar to how ISPC runs program instances in a gang;
 - In a thread block, threads 0-31 fall into the same warp (so do threads 32-63, etc.) 
 	- Therefore, a thread block with 256 CUDA threads is mapped to 8 warps 
- Each “SM” core in the GTX 1080 is capable of scheduling and interleaving execution of up to 64 warps • So, a “SM” core is capable of concurrently executing multiple CUDA thread blocks
+- Each “SM” core in the GTX 1080 is capable of scheduling and interleaving execution of up to 64 warps
+	- So, a “SM” core is capable of concurrently executing multiple CUDA thread blocks
 ***
 # Applications of GPUs and CUDA
 
@@ -207,8 +208,8 @@ GPUs, especially when programmed using CUDA, are used in a wide range of fields:
 - **Graphics and Gaming**: Rendering 3D scenes, ray tracing, and real-time physics simulations are handled by GPUs.
   
 CUDA provides the tools to harness the computational power of GPUs for these tasks by simplifying the parallelization of code, making it accessible to a broader range of developers.
-
----
+![[Pasted image 20240928213518.png|center]]
+***
 # Conclusion
 
 GPUs are highly parallel processing units designed to handle large-scale, data-parallel workloads efficiently. With CUDA, programmers can exploit this parallelism for a variety of tasks, from scientific computing to machine learning. The combination of hardware capabilities (such as SIMT execution, shared memory, and fast memory bandwidth) with the flexibility of CUDA's programming model makes GPUs a cornerstone in modern computing, far beyond their original purpose of rendering graphics.
