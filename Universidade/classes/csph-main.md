@@ -116,6 +116,21 @@ For the #AVX2 we would have the same performance as the #AVX512 : the vector len
 - [[csph-Shared Address Space|Shared Address Space]] - Threads communicate by reading and writing to shared memory locations. This is a straightforward extension of sequential programming but requires careful management of synchronization (locks, barriers).
 - [[csph-Message Passing|Message Passing]] - Threads operate in their own private memory space and communicate by sending and receiving messages. This model is commonly used in clusters and supercomputers.
 - [[csph-SIMD|Data Parallel]] - Computations are expressed as operations on large collections of data, such as applying the same function to elements in an array. It is rigid but allows for significant parallelism in simple tasks like element-wise array operations.
+## Amdahl's Law
+
+> Amdahl's Law provides a more realistic assessment of the potential speedup by accounting for the portion of the program that cannot be parallelized. It demonstrates that even a small fraction of serial execution limits the overall speedup.
+
+The formula for Amdahl’s Law is:
+$$\text{Speedup}(P) = \frac{1}{S + \frac{1-S}{P}}$$
+Where:
+- $S$ is the fraction of the program that is **sequential** (i.e., cannot be parallelized).
+- $P$ is the number of processors.
+This equation indicates that as the number of processors increases, the speedup becomes increasingly limited by the sequential portion of the program. Even with an infinite number of processors, the speedup is capped by the sequential fraction:
+$$\lim_{P\to\infty}Speedup(P)=S1​$$
+### Considerations
+- **Workload Decomposition**: Amdahl’s Law emphasizes the importance of maximizing the parallel portion of the program by reducing the sequential component.
+- **Parallel Overhead**: Amdahl’s Law does not consider parallel overheads, such as communication and synchronization costs, which can further reduce speedup in real-world systems.
+- **Scalability**: While Amdahl’s Law focuses on the limitations due to serial execution, **Gustafson’s Law** (not covered here) provides an alternative perspective by considering the potential for increased problem sizes in parallel computing, which may lead to better scalability.
 ## Shared Memory Address vs. Message Passing
 
 - **Communication**: In the shared address space model, communication is implicit via memory loads and stores, whereas in the message passing model, communication is explicit through message send and receive operations.
