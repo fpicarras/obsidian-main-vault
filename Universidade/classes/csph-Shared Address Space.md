@@ -14,4 +14,5 @@ In this way, communication between threads is implicit, as data exchange happens
 - **Synchronization Primitives**: Since multiple threads access shared memory, synchronization primitives like locks, barriers, and atomic operations are necessary to avoid race conditions, ensure data consistency, and manage dependencies between threads.
 - **Scalability Challenges**: The model can become inefficient as the number of processors increases because synchronization costs grow, and cache coherence protocols might struggle to keep caches consistent across multiple processors.
 ***
-# 
+# Synchronization
+
