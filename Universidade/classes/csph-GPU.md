@@ -141,7 +141,20 @@ __global__ void matrixAdd(float A[Ny][Nx], float B[Ny][Nx], float C[Ny][Nx]) {
 		C[j][i] = A[j][i] + B[j][i]; 
 }
 ```
-I
+There is one thing missing... How do we get the data from the *host* to the *device*?
+The solution is allocating memory in the GPU and then passing it copying the data from the *host*:
+```Cpp
+/* Host */
+float* A = new float[N]; // allocate buffer in host memory 
+// populate host address space pointer A
+// ...
+
+int bytes = sizeof(float)*N;
+float *deviceA;
+cudaMalloc(&deviceA, bytes);
+cudaMemcpy
+
+```
 ***
 
 # CUDA and GPU Architectures Working Together
