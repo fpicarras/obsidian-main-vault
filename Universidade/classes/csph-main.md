@@ -136,3 +136,4 @@ $$\lim_{P\to\infty}Speedup(P)=S1​$$
 - **Communication**: In the shared address space model, communication is implicit via memory loads and stores, whereas in the message passing model, communication is explicit through message send and receive operations.
 - **Memory Access**: Shared address space allows direct access to shared data, making communication between threads fast but prone to synchronization issues. In contrast, message passing isolates each process’s memory, eliminating direct memory access between processes.
 - **Scalability**: Message passing is more scalable, especially in distributed environments, because there is no need to manage shared memory consistency. Shared address space, on the other hand, becomes challenging in large-scale systems due to cache coherence and synchronization overheads.
+***
