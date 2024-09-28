@@ -49,3 +49,14 @@ The hardware must support efficient memory sharing for the shared address space 
     
 - **NUMA (Non-Uniform Memory Access)**: In large systems, memory access times can vary depending on the physical location of the memory relative to the processor. This can lead to **NUMA effects**, where some memory accesses are slower because the memory is further from the processor.
 ***
+# Challenges and Drawbacks
+## **Memory Consistency Issues**:
+When multiple processors or threads share memory, keeping track of which version of a memory location is the "correct" one becomes tricky. For instance:
+
+- **Cache coherence**: Ensuring that when one thread updates a variable, the other threads see the updated value requires a cache coherence protocol (e.g., MESI protocol). However, maintaining coherence across many processors can be costly and affect performance.
+## **Synchronization Overhead**:
+Proper synchronization (locks, barriers, etc.) is necessary but can introduce overhead, especially when many threads need to access the same shared resources. This can lead to:
+- **Lock contention**: Multiple threads waiting for a lock can cause bottlenecks.
+- **False sharing**: When multiple threads access different variables that happen to be on the same cache line, updates from one thread can invalidate the cache lines of the others, leading to performance degradation.
+## **Scalability**:
+As the number of processors increases, maintaining efficient communication through shared memory becomes more difficult. Performance can degrade due to the overhead of synchronization, cache coherence traffic, and NUMA effects.
