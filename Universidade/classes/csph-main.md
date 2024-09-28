@@ -87,7 +87,7 @@ We can mix and match with [[csph-ILP|ILP]], having the same thread in both of th
 
  As we can see, we now have multiple ports for ALU and memory operations, this ports are adapted to support multiple data formats, allowing for SSE (foe example) to have multiple ALU and memory operations in the same clock cycle ([[csph-ILP|ILP]]).
  Let's expand this to 8 cores:
- ![[Pasted image 20240928120731.png|center]]
+ ![[dissecting_i7_8cores.png|center]]
  With an i7 11770, on paper, we would be able to execute **614,4 GFlops/s** and have an L1 bandwidth of **8601,8 GB/s**. How do we test it then? How can we make sure that our program is using the full capabilities of our processor?
 ## Roofline Model
 
@@ -99,4 +99,7 @@ $$
 *$F_a$* is the attainable performance of an architecture \[GFlops/s\]; $F_p$ is the peak compute performance (max ALU throughput); $B_{L1}$ is the L1 cache bandwidth (could be any memory level);
 $AI$ is the *arithmetic intensity*, which is how many flops we so for each byte we communicate with the memory:
 $$AI=\frac{Flops_{program}}{Bytes_{program}}$$
-![[Pasted image 20240928121819.png|center]]
+![[roofline.png|center]]
+Now with all the memory hierarchy…
+![[roofline_full.png|center]]
+### SIMD operations
