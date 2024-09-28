@@ -54,3 +54,20 @@ MPI is widely used in high-performance computing (HPC) and supercomputing enviro
 In supercomputing environments, the hardware can be designed to accelerate message passing. The presentation mentions IBM’s **Blue Gene** supercomputer and modern supercomputers like **Frontier** that use message passing to scale across thousands of nodes.
 - **Cluster of Workstations**: A network of independent computers (often connected via high-speed networks like InfiniBand) communicates using message passing to solve large-scale problems.
 - **Supercomputers**: Systems like **Frontier** combine thousands of nodes (each node containing multiple CPUs and GPUs) to achieve exaflop-level performance. Here, message passing ensures efficient communication across all the nodes.
+***
+# Challenges and Drawbacks
+## **Programming Complexity**:
+
+The explicit nature of message passing makes it more cumbersome for developers compared to shared memory models. Developers must explicitly manage communication between processes, which can be more error-prone, especially for complex programs.
+## **Communication Overhead**:
+
+The cost of sending and receiving messages can be high, especially if large amounts of data need to be transferred. This can become a performance bottleneck if communication is frequent or if the processes are distributed across large distances (e.g., in geographically distributed clusters).
+## **Deadlock and Ordering Issues**:
+
+In synchronous communication, deadlocks can occur if two processes are waiting on each other to send and receive messages. Additionally, ensuring that messages arrive in the correct order can be tricky, particularly in asynchronous systems.
+***
+# Message Passing vs. [[csph-Shared Address Space|Shared Address Space]]:
+
+- **Communication**: In the shared address space model, communication is implicit via memory loads and stores, whereas in the message passing model, communication is explicit through message send and receive operations.
+- **Memory Access**: Shared address space allows direct access to shared data, making communication between threads fast but prone to synchronization issues. In contrast, message passing isolates each process’s memory, eliminating direct memory access between processes.
+- **Scalability**: Message passing is more scalable, especially in distributed environments, because there is no need to manage shared memory consistency. Shared address space, on the other hand, becomes challenging in large-scale systems due to cache coherence and synchronization overheads.

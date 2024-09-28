@@ -60,3 +60,9 @@ Proper synchronization (locks, barriers, etc.) is necessary but can introduce ov
 - **False sharing**: When multiple threads access different variables that happen to be on the same cache line, updates from one thread can invalidate the cache lines of the others, leading to performance degradation.
 ## **Scalability**:
 As the number of processors increases, maintaining efficient communication through shared memory becomes more difficult. Performance can degrade due to the overhead of synchronization, cache coherence traffic, and NUMA effects.
+***
+# [[csph-Message Passing|Message Passing]] vs. Shared Address Space:
+
+- **Communication**: In the shared address space model, communication is implicit via memory loads and stores, whereas in the message passing model, communication is explicit through message send and receive operations.
+- **Memory Access**: Shared address space allows direct access to shared data, making communication between threads fast but prone to synchronization issues. In contrast, message passing isolates each process’s memory, eliminating direct memory access between processes.
+- **Scalability**: Message passing is more scalable, especially in distributed environments, because there is no need to manage shared memory consistency. Shared address space, on the other hand, becomes challenging in large-scale systems due to cache coherence and synchronization overheads.

@@ -116,3 +116,8 @@ For the #AVX2 we would have the same performance as the #AVX512 : the vector len
 - [[csph-Shared Address Space|Shared Address Space]] - Threads communicate by reading and writing to shared memory locations. This is a straightforward extension of sequential programming but requires careful management of synchronization (locks, barriers).
 - [[csph-Message Passing|Message Passing]] - Threads operate in their own private memory space and communicate by sending and receiving messages. This model is commonly used in clusters and supercomputers.
 - [[csph-SIMD|Data Parallel]] - Computations are expressed as operations on large collections of data, such as applying the same function to elements in an array. It is rigid but allows for significant parallelism in simple tasks like element-wise array operations.
+## Shared Memory Address vs. Message Passing
+
+- **Communication**: In the shared address space model, communication is implicit via memory loads and stores, whereas in the message passing model, communication is explicit through message send and receive operations.
+- **Memory Access**: Shared address space allows direct access to shared data, making communication between threads fast but prone to synchronization issues. In contrast, message passing isolates each process’s memory, eliminating direct memory access between processes.
+- **Scalability**: Message passing is more scalable, especially in distributed environments, because there is no need to manage shared memory consistency. Shared address space, on the other hand, becomes challenging in large-scale systems due to cache coherence and synchronization overheads.
