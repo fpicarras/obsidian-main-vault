@@ -11,9 +11,11 @@
             "id": "da697278f8719e0f",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Excalidraw/Drawing 2024-10-11 22.41.21.excalidraw.md"
+                "file": "Homepage.md",
+                "mode": "preview",
+                "source": false
               }
             }
           }
@@ -83,7 +85,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "Excalidraw/Drawing 2024-10-11 22.41.21.excalidraw.md",
+            "file": "Homepage.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -100,7 +102,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "Excalidraw/Drawing 2024-10-11 22.41.21.excalidraw.md",
+            "file": "Homepage.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           }
@@ -112,7 +114,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "Excalidraw/Drawing 2024-10-11 22.41.21.excalidraw.md"
+            "file": "Homepage.md"
           }
         }
       },
@@ -143,8 +145,8 @@
   },
   "active": "da697278f8719e0f",
   "lastOpenFiles": [
-    "Homepage.md",
     "Excalidraw/Drawing 2024-10-11 22.41.21.excalidraw.md",
+    "Homepage.md",
     "Excalidraw/Drawing 2024-10-11 22.39.41.excalidraw.md",
     "Untitled.md",
     "Universidade/Universidade.md",

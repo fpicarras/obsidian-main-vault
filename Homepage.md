@@ -10,7 +10,6 @@ action Daily notes: Open today's daily note
 [[Menu]]
 [[Code_Snippets]]
 
-
 # To-Do
 ## All
 ```tasks
