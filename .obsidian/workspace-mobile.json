@@ -11,26 +11,13 @@
             "id": "da697278f8719e0f",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Homepage.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cc179363288c70b4",
-            "type": "leaf",
-            "state": {
               "type": "excalidraw",
               "state": {
                 "file": "Excalidraw/Drawing 2024-10-11 22.41.21.excalidraw.md"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -138,8 +125,7 @@
         }
       }
     ],
-    "currentTab": 2,
-    "pinned": true
+    "currentTab": 3
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -155,7 +141,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "cc179363288c70b4",
+  "active": "da697278f8719e0f",
   "lastOpenFiles": [
     "Homepage.md",
     "Excalidraw/Drawing 2024-10-11 22.41.21.excalidraw.md",
