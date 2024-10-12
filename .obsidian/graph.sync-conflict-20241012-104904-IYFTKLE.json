@@ -1,0 +1,58 @@
+{
+  "collapse-filter": false,
+  "search": "-path:DailyNotes  ",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "path:GoldenRift  ",
+      "color": {
+        "a": 1,
+        "rgb": 14596436
+      }
+    },
+    {
+      "query": "path:DailyNotes  ",
+      "color": {
+        "a": 1,
+        "rgb": 9554291
+      }
+    },
+    {
+      "query": "file:Homepage",
+      "color": {
+        "a": 1,
+        "rgb": 15155264
+      }
+    },
+    {
+      "query": "path:Universidade/HackerSchool  ",
+      "color": {
+        "a": 1,
+        "rgb": 6084188
+      }
+    },
+    {
+      "query": "path:Universidade  ",
+      "color": {
+        "a": 1,
+        "rgb": 6072278
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": -0.3,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1.00598958333333,
+  "collapse-forces": false,
+  "centerStrength": 0.697736549165121,
+  "repelStrength": 12.1875,
+  "linkStrength": 1,
+  "linkDistance": 57,
+  "scale": 1.0000000000000033,
+  "close": true
+}

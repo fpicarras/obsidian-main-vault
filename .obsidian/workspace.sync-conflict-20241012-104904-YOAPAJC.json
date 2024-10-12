@@ -1,0 +1,203 @@
+{
+  "main": {
+    "id": "5b137161bf91b23f",
+    "type": "split",
+    "children": [
+      {
+        "id": "0123f6e8690e624a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9b5689d5c77b2900",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Universidade/Diferenças Python - C++.md",
+                "mode": "preview",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5322740c79430a71",
+    "type": "split",
+    "children": [
+      {
+        "id": "97d4f9c5da0e0e2d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5c588bb51e447a22",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "aa8bf82a89b1b036",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#question",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "13fb7c311e13f24f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ab15bd335d66575f",
+    "type": "split",
+    "children": [
+      {
+        "id": "3b6fe52115675c50",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "437077c6c1ece59a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Universidade/Diferenças Python - C++.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a6c8ab36bc3b56d3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Universidade/Diferenças Python - C++.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "279b012aa1462a64",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "1c6c44a83baab132",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Universidade/Diferenças Python - C++.md"
+              }
+            }
+          },
+          {
+            "id": "0bbf7136408ff6bc",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "homepage:Open homepage": false,
+      "obsidian-importer:Open Importer": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "9b5689d5c77b2900",
+  "lastOpenFiles": [
+    "Universidade/Workshop Arduino Biomédica.md",
+    "Homepage.md",
+    "Universidade/classes/csph-GPU.md",
+    "Universidade/classes/csph-TPU.md",
+    "Universidade/classes/csph-ISPC.md",
+    "Universidade/classes/csph-SIMD.md",
+    "Universidade/classes/csph-main.md",
+    "Images/Pasted image 20240928125306.png",
+    "Universidade/classes/csph-Shared Address Space.md",
+    "Universidade/classes/csph-Message Passing.md",
+    "Images/Pasted image 20240928213518.png",
+    "Images/Pasted image 20240928212751.png",
+    "Images/Pasted image 20240928210846.png",
+    "Images/Pasted image 20240928200104.png",
+    "Images/roofline_full.png",
+    "Images/roofline.png",
+    "Images/dissecting_i7_8cores.png",
+    "Images/dissected_i7.png",
+    "Universidade/HackerSchool/CA²EC Lab.md",
+    "Universidade/Diferenças Python - C++.md",
+    "Universidade/classes/csph-threads.md",
+    "Universidade/classes/csph-Memory.md",
+    "Universidade/classes/csph-ILP.md",
+    "Universidade/classes/Hardware Threads.md",
+    "Universidade/classes/Cache.md",
+    "Images/spmd-exec.png",
+    "Universidade/classes/csph-Memmory.md",
+    "Universidade/classes/cpsh-Pipeline.md",
+    "Untitled.md",
+    "Universidade/classes/class.md",
+    "DailyNotes/Daily Notes Template.md",
+    "Templates/class-template.md",
+    "Universidade.md",
+    "Universidade/classes",
+    "Meeting--2024-09-19--11-02.md",
+    "Meeting--2024-09-19--11-00.md",
+    "Universidade/Universidade.md",
+    "Templates",
+    "Universidade/csph",
+    "Universidade/OpenLab DEEC"
+  ]
+}
